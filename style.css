@@ -17,6 +17,9 @@ Text Domain: storefront-child
 }
 
 @media screen and (min-width: 768px) {
+  .site-header > .col-full {
+    max-width: none;
+  }
   .site-header #top-zone-wrapper .top-message {
     width: 39.13043%;
     float: left;
