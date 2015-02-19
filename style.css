@@ -1,0 +1,381 @@
+/*
+Theme Name: Storefront Child
+Description: Storefront starter child theme.
+Author: Florin Buga
+Template: storefront
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: storefront-child
+*/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+/**
+ * General Layout
+ */
+.col-full {
+  max-width: 1150px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-header #top-zone-wrapper .top-message {
+    width: 39.13043%;
+    float: left;
+    margin-right: 4.34783%;
+  }
+  .site-header #top-zone-wrapper .top-menu {
+    width: 56.52174%;
+    float: right;
+    margin-right: 0;
+  }
+
+  .left-sidebar .content-area {
+    width: 65.21739%;
+    float: right;
+    margin-right: 0;
+  }
+  .left-sidebar .widget-area {
+    width: 30.43478%;
+    float: left;
+    margin-right: 4.34783%;
+  }
+}
+/**
+ * Typography
+ */
+body,
+button,
+input,
+select,
+textarea {
+  color: #444;
+  font-family: "PT Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: normal;
+}
+
+/**
+ * Global styles
+ */
+.button {
+  border: solid 2px #5FC5B8 !important;
+  box-shadow: none;
+  background: transparent !important;
+  padding: 5px 45px 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #E0575E !important;
+  transition: all 0.35s ease-in-out;
+}
+.button:hover {
+  background: #f0b0a0 !important;
+}
+
+/**
+ * Header
+ */
+.site-header {
+  margin-bottom: 3em;
+  background-color: white;
+  padding-top: 0;
+}
+.site-header #top-zone-wrapper {
+  padding: 1em 0;
+  background-color: white;
+}
+.site-header #logo-zone-wrapper {
+  margin-bottom: 2em;
+  text-align: center;
+}
+.site-header #logo-zone-wrapper img {
+  display: inline;
+}
+.site-header #brand-zone-wrapper {
+  border-top: 1px solid #5FC5B8;
+  border-bottom: 1px solid #5FC5B8;
+  background: transparent url("img/header_pattern.jpg") repeat top left;
+}
+
+/**
+ * Main content area
+ */
+.post-type-archive h1,
+.woocommerce-ordering,
+.woocommerce-result-count {
+  display: none;
+}
+
+/**
+ * Footer
+ */
+.legal {
+  margin-top: 1.618em;
+  text-align: center;
+}
+
+/**
+ * Product Listings ???
+ */
+.products li.product figure {
+  position: relative;
+  min-height: 220px;
+}
+.products li.product figure img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.products li.product h3,
+.products li.product .price {
+  font-size: 15px;
+  font-weight: bold;
+}
+.products li.product h3 {
+  color: #777;
+  line-height: 20px;
+  height: 40px;
+}
+.products li.product .onsale {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  border: solid 2px #E0575E !important;
+  box-shadow: none;
+  background: transparent !important;
+  padding: 5px 45px 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #E0575E !important;
+  transition: all 0.35s ease-in-out;
+  padding: 5px 10px 4px;
+}
+.products li.product .onsale:hover {
+  background: transparent !important;
+}
+.products li.product .star-rating {
+  display: none;
+}
+.products li.product .price {
+  color: black;
+}
+
+/**
+ * Main Naivgation
+ */
+/**
+ * General Menu Styles
+ */
+ul.menu {
+  margin: 0;
+}
+ul.menu > li {
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  /**
+   * Top Menu
+   */
+  .top-message {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #444;
+  }
+
+  .top-menu ul.menu {
+    text-align: right;
+  }
+  .top-menu ul.menu > li {
+    margin-right: 10px;
+    border-right: 1px solid #aaa;
+    padding-right: 10px;
+    line-height: .6em;
+  }
+  .top-menu ul.menu > li:last-child {
+    margin-right: 0;
+    border-right: none;
+    padding-right: 0;
+  }
+  .top-menu ul.menu > li > a {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #444;
+  }
+  .top-menu ul.menu > li > a.cart {
+    color: #E0575E;
+  }
+
+  /**
+   * Primary Navigation
+   */
+  .main-nav ul.menu {
+    text-align: center;
+  }
+  .main-nav ul.menu > li {
+    margin-right: 50px;
+  }
+  .main-nav ul.menu > li:last-child {
+    margin-right: 0;
+  }
+  .main-nav ul.menu > li > a {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #444;
+    display: block;
+    margin-top: -1px;
+    border-top: solid 2px transparent;
+    padding: 25px 0 0;
+    transition: all 0.35s ease-in-out;
+  }
+  .main-nav ul.menu > li > a:hover, .main-nav ul.menu > li.current-menu-item > a {
+    color: #222;
+    border-top: solid 2px #444;
+  }
+
+  /**
+   * Secondary Navigation
+   */
+  .secondary-nav {
+    margin: 1.5em 0;
+  }
+  .secondary-nav ul.menu {
+    text-align: center;
+  }
+  .secondary-nav ul.menu > li {
+    margin-right: 5px;
+  }
+  .secondary-nav ul.menu > li:last-child {
+    margin-right: 0;
+  }
+  .secondary-nav ul.menu > li > a {
+    border: solid 2px #5FC5B8 !important;
+    box-shadow: none;
+    background: transparent !important;
+    padding: 5px 45px 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #E0575E !important;
+    transition: all 0.35s ease-in-out;
+  }
+  .secondary-nav ul.menu > li > a:hover {
+    background: transparent !important;
+  }
+  .secondary-nav ul.menu > li > a:hover, .secondary-nav ul.menu > li.current-menu-item > a {
+    color: black !important;
+  }
+}
+/**
+ * Widgets
+ */
+/**
+ * Side widgets
+ */
+.widget-area .widget h1.widget-title {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: -2px;
+  border-bottom: solid 2px #444;
+  padding-bottom: 20px;
+  font-weight: normal;
+  font-size: 28px;
+}
+.widget-area .widget a {
+  opacity: 1;
+}
+
+/**
+ * Footer widgets
+ */
+.footer-widgets {
+  border-bottom: 1px solid #DADADA;
+  padding-top: 1.618em;
+}
+.footer-widgets .widget h3 {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: -2px;
+  border-bottom: solid 2px #444;
+  padding-bottom: 20px;
+  font-weight: normal;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #333;
+}
+.footer-widgets .widget .textwidget {
+  border-top: solid 2px #e9e9e9;
+  padding-top: 25px;
+}
+
+/**
+ * Individual widgets
+ */
+.widget_product_categories > ul,
+.widget_product_categories > div,
+.widget_nav_menu > ul,
+.widget_nav_menu > div {
+  border-top: solid 2px #e9e9e9;
+  padding-top: 25px;
+}
+.widget_product_categories ul li,
+.widget_nav_menu ul li {
+  display: list-item;
+  border-bottom: double 3px #eee;
+  padding: 10px 5px 15px;
+}
+.widget_product_categories ul li:last-child,
+.widget_nav_menu ul li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.widget_product_categories ul li:before,
+.widget_nav_menu ul li:before {
+  content: "" !important;
+}
+.widget_product_categories ul li.current-cat:before,
+.widget_nav_menu ul li.current-cat:before {
+  content: "" !important;
+}
+.widget_product_categories ul li a,
+.widget_product_categories ul li span,
+.widget_nav_menu ul li a,
+.widget_nav_menu ul li span {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #444;
+  font-size: 15px;
+}
+.widget_product_categories ul li ul.children,
+.widget_nav_menu ul li ul.children {
+  margin: 0 0 0 2em;
+}
+.widget_product_categories ul li ul.children li:first-child,
+.widget_nav_menu ul li ul.children li:first-child {
+  margin-top: 17px;
+  border-top: double 3px #eee;
+  padding-top: 15px;
+}

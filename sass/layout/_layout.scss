@@ -1,0 +1,31 @@
+/**
+ * General Layout
+ */
+
+.col-full {
+    max-width: 1150px;
+}
+
+@media screen and (min-width: 768px) {
+	.site-header {
+    	#top-zone-wrapper {
+        	//position: fixed;
+        	//top: 0;
+    		.top-message {
+    			@include span(5 of 12);
+            }
+            .top-menu {
+                @include span(7 of 12 last);
+            }
+    	}
+    }
+	.left-sidebar {
+		.content-area {
+			@include span(last 8 of 12);
+		}
+
+		.widget-area {
+			@include span(4 of 12);
+		}
+	}
+}

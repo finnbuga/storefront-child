@@ -1,0 +1,78 @@
+/**
+ * Widgets
+ */
+
+/**
+ * Side widgets
+ */
+.widget-area {
+    .widget {
+        h1.widget-title {
+            @include side-widget-title;
+        }
+        a {
+            opacity: 1;
+        }
+    }
+}
+
+/**
+ * Footer widgets
+ */
+.footer-widgets {
+	border-bottom: 1px solid #DADADA;
+	padding-top: 1.618em;
+    .widget {
+        h3 {
+            @include footer-widget-title;
+        }
+        .textwidget {
+            @include widget-body;
+        }
+    }
+}
+
+/**
+ * Individual widgets
+ */
+.widget_product_categories,
+.widget_nav_menu {
+	> ul,
+	> div {
+        @include widget-body;
+    }
+    ul {
+		li {
+            display: list-item;
+            border-bottom: double 3px #eee;
+            padding: 10px 5px 15px;
+            &:last-child {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+
+			&:before {
+				content: "" !important;
+			}
+
+			&.current-cat {
+				&:before {
+					content: "" !important;
+				}
+			}
+            a,
+            span {
+                @include menu-links;
+                font-size: 15px;
+            }
+            ul.children {
+                margin: 0 0 0 2em;
+                li:first-child {
+                    margin-top: 17px;
+                    border-top: double 3px #eee;
+                    padding-top: 15px;
+                }
+            }
+		}
+	}
+}

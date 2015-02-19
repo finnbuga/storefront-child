@@ -1,0 +1,91 @@
+/**
+ * Global styles
+ */
+
+.button {
+    @include sexy-border($color2, $color1, #f0b0a0);
+}
+
+/**
+ * Header
+ */
+.site-header {
+    margin-bottom: 3em;
+	background-color: white;
+	padding-top: 0;
+    #top-zone-wrapper {
+        padding: 1em 0;
+        background-color: white;
+    }
+    #logo-zone-wrapper {
+        margin-bottom: 2em;
+        text-align: center;
+        img {
+            display: inline;
+        }
+    }
+    #brand-zone-wrapper {
+        border-top: 1px solid $color1;
+        border-bottom: 1px solid $color1;
+        background: transparent url("img/header_pattern.jpg") repeat top left;
+    }
+}
+
+/**
+ * Main content area
+ */
+.post-type-archive h1,
+.woocommerce-ordering,
+.woocommerce-result-count {
+    display: none;
+}
+
+/**
+ * Footer
+ */
+.legal {
+    margin-top: 1.618em;
+    text-align: center;
+}
+
+
+/**
+ * Product Listings ???
+ */
+.products {
+    li.product {
+        figure {
+            position: relative;
+            min-height: 220px;
+            img {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+        }
+        h3,
+        .price {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        h3 {
+            color: #777;
+            line-height: 20px;
+            height: 40px;
+        }
+        .onsale {
+            position: absolute;
+            top: 2em;
+            left: 2em;
+            @include sexy-border($color2, $color2);
+            padding: 5px 10px 4px;
+        }
+        .star-rating {
+            display: none;
+        }
+        .price {
+            color: black;
+        }
+    }
+}

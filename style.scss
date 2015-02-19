@@ -1,0 +1,24 @@
+/*
+Theme Name: Storefront Child
+Description: Storefront starter child theme.
+Author: Florin Buga
+Template: storefront
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: storefront-child
+*/
+
+//@import 'bourbon';
+@import 'susy';
+
+@import '../storefront/sass/utils/variables';
+@import 'sass/utils/variables';
+@import '../storefront/sass/utils/mixins';
+@import 'sass/utils/mixins';
+
+@import 'sass/layout/layout';
+@import 'sass/base/typography';
+@import 'sass/base/base';
+@import 'sass/components/menu';
+@import 'sass/components/widgets';
