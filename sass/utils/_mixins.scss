@@ -7,19 +7,19 @@
 }
 
 @mixin sexy-border($text-color : $color2, $border-color : $color1, $hover-color : transparent) {
-    border: solid 2px $border-color !important;
+    border: solid 2px $border-color;
     box-shadow: none;
-    background: transparent !important;
+    background: transparent;
     padding: 5px 45px 4px;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1px;
-    color: $text-color !important;
+    color: $text-color;
     transition: all 0.35s ease-in-out;
     &:hover {
-        background: $hover-color !important;
+        background: $hover-color;
     }
 }
 
