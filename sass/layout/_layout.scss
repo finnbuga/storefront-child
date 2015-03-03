@@ -22,7 +22,6 @@
             }
     	}
     }
-	.left-sidebar {
 		.content-area {
 			@include span(last 8 of 12);
 		}
@@ -30,5 +29,4 @@
 		.widget-area {
 			@include span(4 of 12);
 		}
-	}
 }
