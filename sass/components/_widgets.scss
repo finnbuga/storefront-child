@@ -7,6 +7,7 @@
  */
 .widget-area {
     .widget {
+	    font-size: inherit;
         h1.widget-title {
             @include side-widget-title;
         }
