@@ -77,3 +77,19 @@
 		}
 	}
 }
+
+.widget_search form::before,
+.widget_product_search form::before {
+	top: 0;
+	left: 0;
+	padding: 12px 15px;
+	line-height: 24px;
+	padding-top: 11px;
+	color: #9d9d9d;
+}
+.widget_search form input[type=text],
+.widget_search form input[type=search],
+.widget_product_search form input[type=text],
+.widget_product_search form input[type=search] {
+	padding-left: 35px;
+}
