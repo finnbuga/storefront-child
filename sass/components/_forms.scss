@@ -12,6 +12,16 @@ input[type="submit"],
     @include sexy-border($color2, $color1, #f0b0a0);
     padding: 10px 20px;
     line-height: 22px;
+	&.cta,
+	&.alt {
+		@include sexy-border(white, $color1, #f0b0a0);
+	    padding: 10px 20px;
+	    line-height: 22px;
+		background: $color2;
+		&:hover {
+			opacity: inherit;
+		}
+	}
 }
 
 input[type="text"],
