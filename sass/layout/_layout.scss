@@ -23,10 +23,19 @@
     	}
     }
 	.content-area {
-		@include span(last 8 of 12);
+		@include span(12 of 12);
 	}
-
 	.widget-area {
-		@include span(4 of 12);
+		display: none;
+	}
+	.woocommerce.archive {
+		.content-area {
+			@include span(last 8 of 12);
+		}
+
+		.widget-area {
+			display: block;
+			@include span(4 of 12);
+		}
 	}
 }
