@@ -24,6 +24,15 @@ function woocommerce_template_loop_product_thumbnail() {
 
 
 /**
+ * Disable customizer.
+ */
+function storefront_child_disable_customizer() {
+	return false;
+}
+add_filter( 'storefront_customizer_enabled', 'storefront_child_disable_customizer');
+
+
+/**
  * Display legal links instead of theme credit
  */
 function storefront_credit() {
