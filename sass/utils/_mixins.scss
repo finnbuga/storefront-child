@@ -23,6 +23,16 @@
     }
 }
 
+@mixin form-element {
+	border: solid 1px #ccc;
+	padding: 10px 15px;
+	line-height: 24px;
+	border-radius: 2px;
+	box-shadow: none;
+	background-color: white;
+	color: #9d9d9d;
+}
+
 @mixin widget-title {
     display: inline-block;
     margin: 0;

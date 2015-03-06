@@ -31,13 +31,7 @@ input[type="password"],
 input[type="search"],
 textarea,
 .input-text {
-	border: solid 1px #ccc;
-	padding: 10px 15px;
-	line-height: 24px;
-	border-radius: 2px;
-	box-shadow: none;
-	background-color: white;
-	color: #9d9d9d;
+	@include form-element;
 }
 textarea {
 	height: 120px;
@@ -57,4 +51,33 @@ textarea:focus {
 	-moz-transition: opacity 0.15s 0.15s ease;
 	transition: opacity 0.15s 0.15s ease;
 	opacity: 0;
+}
+
+/* Style select dropdowns */
+/* Used Chosen js library */ 
+.chosen-container {
+	.chosen-single {
+		@include form-element;
+		height: auto;
+		background: none;
+		div b {
+			background-position: 2px 12px;
+		}
+	}
+	&.chosen-with-drop .chosen-single {
+		border: solid 1px #ccc;
+		box-shadow: none;	
+		background: none;
+		div b {
+			background-position: -16px 12px;
+		}
+	}
+	.chosen-results li {
+		border: solid 1px white;
+		&.highlighted {
+			border: solid 1px $color1;
+			background: none;
+			color: $text-color;
+		}
+	}
 }
