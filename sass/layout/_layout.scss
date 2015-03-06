@@ -38,4 +38,23 @@
 			@include span(4 of 12);
 		}
 	}
+	
+	.woocommerce.single-product div.product {
+		@include container;
+		.images {
+			@include span(4 of 12);
+		}
+		.product_title {
+			@include span(last 8 of 12);
+			clear: none;
+		}
+		.summary {
+			@include span(4 of 12);
+		}
+		.offers,
+		.cart {
+			@include span(last 4 of 12);
+		}
+		
+	}
 }
