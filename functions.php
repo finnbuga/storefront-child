@@ -51,6 +51,24 @@ function storefront_credit() {
 
 
 /**
+ * Reorder product page elements.
+ */
+function storefront_child_reorder_product_page() {
+	remove_action( 'woocommerce_single_product_summary',        'woocommerce_template_single_title', 5 );
+	add_action(    'woocommerce_before_single_product_summary', 'woocommerce_template_single_title', 100 );
+	
+	remove_action( 'woocommerce_single_product_summary',        'woocommerce_template_single_price', 10 );
+	add_action(    'woocommerce_after_single_product_summary',  'woocommerce_template_single_price', 5 );
+
+	remove_action( 'woocommerce_single_product_summary',        'woocommerce_template_single_add_to_cart', 30 );
+	add_action(    'woocommerce_after_single_product_summary',  'woocommerce_template_single_add_to_cart', 10 );
+	
+	remove_action( 'woocommerce_after_single_product_summary',  'woocommerce_output_product_data_tabs', 10 );
+}
+add_action( 'init', 'storefront_child_reorder_product_page' );
+
+
+/**
  * Remove breadcrumb.
  */
 function storefront_child_remove_breadcrumb() {
