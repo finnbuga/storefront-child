@@ -60,6 +60,12 @@ textarea:focus {
 		@include form-element;
 		height: auto;
 		background: none;
+		span {
+			margin-right: .5em;
+			font-weight: normal;
+			color: $text-color;
+			font-size: 14px;
+		}
 		div b {
 			background-position: 2px 12px;
 		}
