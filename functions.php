@@ -71,33 +71,10 @@ add_action( 'init', 'storefront_child_reorder_product_page' );
 
 
 /**
- * Display terms for a give taxonomy.
- */
-function storefront_child_display_terms($taxonomy) {
-	global $post;
-	
-	if ( $terms_as_text = get_the_term_list( $post->ID, $taxonomy, '', ', ', '' ) ) {
-	?>
-		<div class="term <?php echo $taxonomy; ?>">
-			<label><?php echo ucfirst( $taxonomy ); ?>: </label>
-			<span><?php echo strip_tags( $terms_as_text ); ?></span>
-		</div>
-	<?php
-	}
-}
-
-
-/**
  * Display custom taxonomies' terms.
  */
 function storefront_child_display_custom_taxonomies() {
-	storefront_child_display_terms('atentionari');
-	
-	$custom_taxonomies = array( 'colectii' , 'stil', 'dimensiuni', 'materiale', 'sistem de inchidere', 'accesorii', 'culori', 'origine', 'metoda de fabricatie', 'instructiuni de intretinere' );
-	
-	foreach ($custom_taxonomies as $taxonomy) {
-		storefront_child_display_terms($taxonomy);
-	}
+	include 'templates/custom_taxonomies.php';
 }
 
 
