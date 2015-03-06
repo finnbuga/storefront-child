@@ -1,4 +1,17 @@
-<?php global $post; ?>
+<?php
+/**
+ * The template for displaying the custom taxonomies.
+ *
+ * @author Florin Buga
+ */
+
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
+global $post;
+
+$custom_taxonomies = array( 'colectii' , 'stil', 'dimensiuni', 'materiale', 'sistem de inchidere', 
+		'accesorii', 'culori', 'origine', 'metoda de fabricatie', 'instructiuni de intretinere' );
+?>
 
 <?php if ( $term_list = get_the_term_list( $post->ID, 'atentionari', '', ', ', '' ) ) : ?>
 
@@ -10,8 +23,6 @@
 
 <ul class="custom_taxonomies">
 
-	<?php $custom_taxonomies = array( 'colectii' , 'stil', 'dimensiuni', 'materiale', 'sistem de inchidere', 
-		'accesorii', 'culori', 'origine', 'metoda de fabricatie', 'instructiuni de intretinere' ); ?>
 	<?php foreach ($custom_taxonomies as $taxonomy) : ?>
 		<?php if ( $term_list = get_the_term_list( $post->ID, $taxonomy, '', ', ', '' ) ) : ?>
 	
