@@ -11,6 +11,8 @@
  */
 function enqueue_parent_theme_style() {
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'chosen',       get_stylesheet_directory_uri()  . '/inc/chosen/chosen.css' );
+	wp_enqueue_script( 'chosen',      get_stylesheet_directory_uri() .  '/inc/chosen/chosen.jquery.js', array( 'jquery' ) );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_theme_style' );
 
