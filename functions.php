@@ -66,6 +66,10 @@ function storefront_child_reorder_product_page() {
 	remove_action( 'woocommerce_after_single_product_summary',  'woocommerce_output_product_data_tabs', 10 );
 	
 	add_action(    'woocommerce_product_meta_end',              'storefront_child_display_custom_taxonomies', 40 );
+	
+	add_action(    'woocommerce_after_single_product_summary',  'storefront_child_product_info_notes', 6 );
+	add_action(    'woocommerce_after_single_product_summary',  'storefront_child_product_availability', 7 );
+	add_action(    'woocommerce_after_single_product_summary',  'storefront_child_product_contact', 8 );
 }
 add_action( 'init', 'storefront_child_reorder_product_page' );
 
@@ -75,6 +79,30 @@ add_action( 'init', 'storefront_child_reorder_product_page' );
  */
 function storefront_child_display_custom_taxonomies() {
 	include 'templates/custom_taxonomies.php';
+}
+
+
+/**
+ * Display product info notes.
+ */
+function storefront_child_product_info_notes() {
+	include 'templates/product_info_notes.php';
+}
+
+
+/**
+ * Display product availability.
+ */
+function storefront_child_product_availability() {
+	include 'templates/product_availability.php';
+}
+
+
+/**
+ * Display product availability.
+ */
+function storefront_child_product_contact() {
+	include 'templates/product_contact.php';
 }
 
 
