@@ -21,3 +21,10 @@ h6 {
 	font-family: $header-font;
 	font-weight: normal;
 }
+
+a {
+	color: $link-color;
+	&:hover {
+		color: $color1;
+	}
+}
