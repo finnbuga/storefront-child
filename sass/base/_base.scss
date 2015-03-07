@@ -31,8 +31,6 @@
 /**
  * Main content area
  */
-
-
 .post-type-archive h1,
 .woocommerce-ordering,
 .woocommerce-result-count {
@@ -42,6 +40,15 @@
 /**
  * Footer
  */
+.site-footer {
+	a:not(.button) {
+		color: $link-color;
+		&:hover {
+			color: $color1;
+		}
+	}
+	
+}
 .legal {
     margin-top: 1.618em;
     text-align: center;
