@@ -41,20 +41,36 @@
 	
 	.woocommerce.single-product div.product {
 		@include container;
+		// Left column.
 		.images {
-			@include span(4 of 12);
+			@include span(8 of 24);
 		}
+		// Middle and right columns.
 		.product_title {
-			@include span(last 8 of 12);
+			@include span(last 16 of 24);
 			clear: none;
 		}
+		// Middle column.
 		.summary {
-			@include span(4 of 12);
+			@include span(8 of 24);
 		}
-		.offers,
+		// Right column.
+		div[itemprop="offers"],
+		.disponibilitate {
+			@include span(3 of 24);
+		}
+		.info-notes {
+			@include span(last 5 of 24);
+		}
+		.contact {
+			@include span(last 8 of 24);
+		}
 		.cart {
-			@include span(last 4 of 12);
+			@include span(last 8 of 24);
 		}
-		
+		// Bellow.
+		.related.products {
+			@include span(12 of 12);
+		}
 	}
 }

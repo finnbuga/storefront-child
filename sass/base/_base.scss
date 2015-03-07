@@ -133,8 +133,63 @@ ul.products {
 			}
 		}	
 	}
+	div[itemprop="offers"] {
+		border-right: solid 1px #ccc;
+		font-size: 23px;
+		line-height: 26px;
+		font-weight: bold;
+		.price {
+			margin-bottom: 3px;
+		}
+	}
+	.disponibilitate {
+		border-right: solid 1px #ccc;
+		span {
+			display: inline-block;
+			max-width: 87px;
+			margin-right: 3px;
+			background: $color1;
+			color: white;
+			padding: 2px 10px 2px 10px;
+			text-transform: uppercase;
+			font-size: 13px;
+			font-weight: bold;
+		}
+	}
+	.info-notes {
+		padding: 2px 10px 2px 10px;
+		font-size: 13px;
+		font-weight: bold;
+		div {
+			position: relative;
+			&::before {
+				font-family: FontAwesome;
+				position: absolute;
+				top: -1px;
+				left: -21px;
+				font-size: 14px;
+				color: $color1;
+			}
+			&.delivery::before {
+				content: "\f0d1";
+			}
+			&.payment::before {
+				content: "\f0d6";
+			}
+			&.return::before {
+				content: "\f079";
+			}			
+		}
+	}
+	.contact {
+		margin: 35px 0 0 0;
+		font-size: 13px;
+		font-weight: bold;
+	}
 	form.cart {
-		border: none;
+		margin: 25px 0 0 0;
+		border-top: solid 1px #ccc;
+		padding: 0;
 		// Choose size, color, etc.
 		.variations {
 			.label {
@@ -142,6 +197,7 @@ ul.products {
 			}
 			.value {
 				height: 46px;
+				margin: 35px 0;
 			}
 			.reset_variations {
 				display: none !important;
@@ -155,8 +211,14 @@ ul.products {
 			}
 			.variations_button {
 				border: none;
+				padding: 0;
 				button {
-					width: 100%
+					width: 100%;
+					&::before {
+						font-family: FontAwesome;
+						content: "\f07a";
+						margin-right: .5em;
+					}
 				}
 			}			
 		}
