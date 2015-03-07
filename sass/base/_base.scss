@@ -146,15 +146,14 @@ ul.products {
 		line-height: 26px;
 		font-weight: bold;
 		.price {
-			margin-bottom: 3px;
+			margin-bottom: 4px;
 		}
 	}
 	.disponibilitate {
 		border-right: solid 1px #ccc;
 		span {
 			display: inline-block;
-			max-width: 87px;
-			margin-right: 3px;
+			max-width: 89px;
 			background: $color1;
 			color: white;
 			padding: 2px 10px 2px 10px;
