@@ -56,6 +56,21 @@ ul.products li.product .price {
 /**
  * Single Product
  */
+.single-product div.product .images .wp-post-image {
+  margin: 0 auto;
+}
+.single-product div.product .images .thumbnails a.zoom {
+  width: auto;
+  height: 90px;
+  margin: 10px;
+}
+.single-product div.product .images .thumbnails a.zoom.first {
+  clear: none;
+}
+.single-product div.product .images .thumbnails a.zoom.last {
+  float: left;
+  margin-right: 10px;
+}
 .single-product div.product .product_meta {
   font-size: 1em;
 }

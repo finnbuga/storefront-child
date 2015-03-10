@@ -53,6 +53,25 @@ ul.products {
  * Single Product
  */
 .single-product div.product {
+	.images {
+		.wp-post-image {
+			margin: 0 auto;
+		}
+		.thumbnails {
+			a.zoom {
+				width: auto;
+				height: 90px;
+				margin: 10px;
+				&.first {
+					clear: none;
+				}
+				&.last {
+					float: left;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
 	.product_meta {
 		font-size: 1em;
 		// Hide SKU and default taxonomies
