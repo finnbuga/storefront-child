@@ -7,11 +7,11 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
-.button,
 .added_to_cart {
     @include sexy-border($color2, $color1, #f0b0a0);
     padding: 10px 20px;
     line-height: 22px;
+    height: 46px;
 	&.cta,
 	&.alt {
 		@include sexy-border(white, $color1, #f0b0a0);
