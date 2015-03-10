@@ -263,6 +263,23 @@ a.remove {
 #payment .place-order .button {
   font-size: 12px;
 }
+#payment .payment_methods li {
+  background: rgba(0, 0, 0, 0.035);
+}
+#payment .payment_methods li label {
+  display: inline-block;
+  width: auto;
+}
+#payment .payment_methods li label::after {
+  content: ".";
+}
+#payment .payment_methods li .payment_box {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
 
 @media screen and (min-width: 768px) {
   /**

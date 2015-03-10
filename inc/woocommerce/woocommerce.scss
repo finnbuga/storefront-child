@@ -284,6 +284,25 @@ a.remove {
 			font-size: 12px;
 		}
 	}
+	.payment_methods {
+		li {
+			background: rgba(0,0,0,0.035);
+			label {
+				display: inline-block;
+				width: auto;
+				&::after {
+					content: ".";
+				}
+			}
+			.payment_box {
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+				background: none;
+				border: none;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 768px) {
