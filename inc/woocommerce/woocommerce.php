@@ -26,3 +26,13 @@ function storefront_child_woocommerce_check_terms_by_default() {
 	return true;
 }
 add_filter( 'woocommerce_terms_is_checked_default', 'storefront_child_woocommerce_check_terms_by_default' );
+
+
+/**
+ * Shorten the shipping line to contain only the cost.
+ * Remove the name of the shipping. E.g. "Fast delivery".
+ */
+function storefront_child_woocommerce_shorten_shipping_line( $label, $method ) {
+	return wc_price( $method->cost );
+}
+add_filter( 'woocommerce_cart_shipping_method_full_label', 'storefront_child_woocommerce_shorten_shipping_line', 10, 2 );
