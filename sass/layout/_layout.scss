@@ -43,16 +43,16 @@
 		@include container;
 		// Left column.
 		.images {
-			@include span(8 of 24);
+			@include span(10 of 24);
 		}
 		// Middle and right columns.
 		.product_title {
-			@include span(last 16 of 24);
+			@include span(last 14 of 24);
 			clear: none;
 		}
 		// Middle column.
 		.summary {
-			@include span(8 of 24);
+			@include span(7 of 24);
 		}
 		// Right column.
 		div[itemprop="offers"],
@@ -60,13 +60,13 @@
 			@include span(3 of 24);
 		}
 		.info-notes {
-			@include span(last 5 of 24);
+			@include span(last 4 of 24);
 		}
 		.contact {
-			@include span(last 8 of 24);
+			@include span(last 7 of 24);
 		}
 		.cart {
-			@include span(last 8 of 24);
+			@include span(last 7 of 24);
 		}
 		// Bellow.
 		.related.products {
