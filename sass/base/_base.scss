@@ -156,6 +156,23 @@ a.remove {
 
 
 /**
+ * Checkout ???
+ */
+@media screen and (min-width: 768px) {
+	#order_review_heading,
+	#order_review {
+		border: 3px solid $color1;
+	}
+	#order_review_heading {
+		border-width: 3px 3px 0;
+	}
+	#order_review {
+		border-width: 0 3px 3px;
+	}
+}
+
+
+/**
  * Product page ???
  */
 .woocommerce.single-product div.product {
