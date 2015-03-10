@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-	$( "#pa_masuri" ).chosen({
+	$( "select" ).chosen({
         disable_search_threshold: 10,
         width: "150px",
     });

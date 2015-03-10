@@ -7,18 +7,17 @@
 
 
 /**
+ * Initialize the included modules.
+ */
+require get_stylesheet_directory() . '/inc/init.php';
+
+
+/**
  * Load stylesheets and scripts.
  */
 function storefront_child_load_styles_and_scripts() {
 	// Parent stylesheet
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() .    '/style.css' );
-
-	// Chosen JS library
-	wp_enqueue_style( 'chosen',       get_stylesheet_directory_uri() . '/inc/chosen/chosen.css' );
-	wp_enqueue_script( 'chosen',      get_stylesheet_directory_uri() .  '/inc/chosen/chosen.jquery.js', array( 'jquery' ) );
-
-	// This theme's script file.
-	wp_enqueue_script( 'theme',       get_stylesheet_directory_uri() .  '/script.js',  array( 'chosen' ) );
 
 	// This theme's stylesheet. Readd it so it's the last to load.
 	wp_dequeue_style( 'storefront-style' );
