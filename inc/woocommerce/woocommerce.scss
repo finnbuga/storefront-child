@@ -2,12 +2,10 @@
  * WooCommerce
  */
 
-
 @import 'susy';
 
 @import '../../sass/utils/variables';
 @import '../../sass/utils/mixins';
-
 
 /**
  * Products
@@ -231,6 +229,43 @@ a.remove {
 	font-size: 21px;
 }
 
+/**
+ * Checkout
+ */
+.checkout {
+	.woocommerce-billing-fields {
+		#billing_country_field,
+		#billing_company_field,
+		#billing_state_field {
+			display: none;
+		}
+		#billing_address_2_field,
+		#billing_postcode_field {
+			display: none !important;
+		}
+	}
+	.woocommerce-shipping-fields {
+		display: none;
+	}
+	
+	.shop_table {
+		.variation {
+			margin: 0;
+			dt,
+			dd {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+#payment {
+	.place-order {
+		.button {
+			font-size: 12px;
+		}
+	}
+}
 
 @media screen and (min-width: 768px) {
 	/**

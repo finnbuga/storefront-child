@@ -222,6 +222,33 @@ a.remove {
   font-size: 21px;
 }
 
+/**
+ * Checkout
+ */
+.checkout .woocommerce-billing-fields #billing_country_field,
+.checkout .woocommerce-billing-fields #billing_company_field,
+.checkout .woocommerce-billing-fields #billing_state_field {
+  display: none;
+}
+.checkout .woocommerce-billing-fields #billing_address_2_field,
+.checkout .woocommerce-billing-fields #billing_postcode_field {
+  display: none !important;
+}
+.checkout .woocommerce-shipping-fields {
+  display: none;
+}
+.checkout .shop_table .variation {
+  margin: 0;
+}
+.checkout .shop_table .variation dt,
+.checkout .shop_table .variation dd {
+  display: inline-block;
+}
+
+#payment .place-order .button {
+  font-size: 12px;
+}
+
 @media screen and (min-width: 768px) {
   /**
    * Checkout
