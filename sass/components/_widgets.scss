@@ -96,6 +96,14 @@
 	}
 }
 
+
+#mc-embedded-subscribe-form {
+	input[type=email] {
+		width: 100%;
+		margin-bottom: 1.6em;
+	}
+}
+
 .fb_iframe_widget {
 	overflow: hidden;
 	max-width: 100%;
