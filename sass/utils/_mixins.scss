@@ -29,8 +29,8 @@
 	line-height: 24px;
 	border-radius: 2px;
 	box-shadow: none;
-	background-color: white;
-	color: #9d9d9d;
+	background-color: transparent;
+	color: $text-color;
 }
 
 @mixin widget-title {

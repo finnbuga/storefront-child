@@ -43,7 +43,8 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-	background-color: white;
+	background-color: transparent;
+	color: $text-color;
 }
 
 [placeholder]:focus::-webkit-input-placeholder {
