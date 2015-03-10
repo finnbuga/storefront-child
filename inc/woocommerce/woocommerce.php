@@ -17,3 +17,12 @@ function storefront_child_woocommerce_make_postcode_optional( $address_fields ) 
 	return $address_fields;
 }
 add_filter( 'woocommerce_default_address_fields', 'storefront_child_woocommerce_make_postcode_optional' );
+
+
+/**
+ * Check the Terms & Conditions checkbox by default on the checkout form.
+ */
+function storefront_child_woocommerce_check_terms_by_default() {
+	return true;
+}
+add_filter( 'woocommerce_terms_is_checked_default', 'storefront_child_woocommerce_check_terms_by_default' );
