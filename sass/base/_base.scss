@@ -56,6 +56,23 @@
 
 
 /**
+ * Tables
+ */
+table {
+	tbody {
+		tr:nth-child(2n) {
+			td {
+				background: none;
+			}
+		}
+		td {
+			background: none;
+		}
+	}
+}
+
+
+/**
  * Product Listings ???
  */
 ul.products {
@@ -98,13 +115,45 @@ ul.products {
 }
 
 /**
- * Checkout ???
+ * Cart ???
  */
 .cart_totals {
 	.wc-proceed-to-checkout .button.checkout-button {
 		font-size: 13px;
 	}
 }
+table.cart {
+	thead {
+		text-indent: 0;
+	}
+	th,
+	td {
+		padding: 30px 5px;
+		border-bottom: 1px solid #ccc;
+	}
+	td {
+		vertical-align: middle;
+	}	
+	.product-thumbnail {
+		display: table-cell;
+		img {
+			margin: 0;
+		}
+	}
+	.variation {
+		dt,
+		dd {
+			display: inline-block;
+		}
+	}
+	.qty {
+		max-width: 3.6em;
+	}
+}
+a.remove {
+	font-size: 21px;
+}
+
 
 /**
  * Product page ???
