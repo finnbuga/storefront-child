@@ -3,10 +3,10 @@
  */
 
 button,
-.button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
+.button,
 .added_to_cart {
     @include sexy-border($color2, $color1, #f0b0a0);
     padding: 10px 20px;
@@ -32,26 +32,13 @@ input[type="search"],
 textarea,
 .input-text {
 	@include form-element;
+	&:focus {
+		background-color: transparent;
+		color: $text-color;
+	}
 }
 textarea {
 	height: 120px;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-textarea:focus {
-	background-color: transparent;
-	color: $text-color;
-}
-
-[placeholder]:focus::-webkit-input-placeholder {
-	-webkit-transition: opacity 0.15s 0.15s ease;
-	-moz-transition: opacity 0.15s 0.15s ease;
-	transition: opacity 0.15s 0.15s ease;
-	opacity: 0;
 }
 
 /* Style select dropdowns */
