@@ -476,10 +476,10 @@ ul.menu > li {
  * Forms
  */
 button,
-.button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
+.button,
 .added_to_cart {
   border: solid 2px #5FC5B8;
   box-shadow: none;
@@ -497,22 +497,22 @@ input[type="submit"],
   height: 46px;
 }
 button:hover,
-.button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
+.button:hover,
 .added_to_cart:hover {
   background: #f0b0a0;
 }
 button.cta, button.alt,
-.button.cta,
-.button.alt,
 input[type="button"].cta,
 input[type="button"].alt,
 input[type="reset"].cta,
 input[type="reset"].alt,
 input[type="submit"].cta,
 input[type="submit"].alt,
+.button.cta,
+.button.alt,
 .added_to_cart.cta,
 .added_to_cart.alt {
   border: solid 2px #5FC5B8;
@@ -531,27 +531,27 @@ input[type="submit"].alt,
   background: #E0575E;
 }
 button.cta:hover, button.alt:hover,
-.button.cta:hover,
-.button.alt:hover,
 input[type="button"].cta:hover,
 input[type="button"].alt:hover,
 input[type="reset"].cta:hover,
 input[type="reset"].alt:hover,
 input[type="submit"].cta:hover,
 input[type="submit"].alt:hover,
+.button.cta:hover,
+.button.alt:hover,
 .added_to_cart.cta:hover,
 .added_to_cart.alt:hover {
   background: #f0b0a0;
 }
 button.cta:hover, button.alt:hover,
-.button.cta:hover,
-.button.alt:hover,
 input[type="button"].cta:hover,
 input[type="button"].alt:hover,
 input[type="reset"].cta:hover,
 input[type="reset"].alt:hover,
 input[type="submit"].cta:hover,
 input[type="submit"].alt:hover,
+.button.cta:hover,
+.button.alt:hover,
 .added_to_cart.cta:hover,
 .added_to_cart.alt:hover {
   opacity: inherit;
@@ -572,63 +572,17 @@ textarea,
   background-color: transparent;
   color: #444;
 }
-
-textarea {
-  height: 120px;
-}
-
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
-textarea:focus {
+textarea:focus,
+.input-text:focus {
   background-color: transparent;
   color: #444;
 }
 
-[placeholder]:focus::-webkit-input-placeholder {
-  -webkit-transition: opacity 0.15s 0.15s ease;
-  -moz-transition: opacity 0.15s 0.15s ease;
-  transition: opacity 0.15s 0.15s ease;
-  opacity: 0;
-}
-
-/* Style select dropdowns */
-/* Used Chosen js library */
-.chosen-container .chosen-single {
-  border: solid 1px #ccc;
-  padding: 10px 15px;
-  line-height: 24px;
-  border-radius: 2px;
-  box-shadow: none;
-  background-color: transparent;
-  color: #444;
-  height: auto;
-  background: none;
-}
-.chosen-container .chosen-single span {
-  margin-right: .5em;
-  font-weight: normal;
-  color: #444;
-  font-size: 14px;
-}
-.chosen-container .chosen-single div b {
-  background-position: 2px 12px;
-}
-.chosen-container.chosen-with-drop .chosen-single {
-  border: solid 1px #ccc;
-  box-shadow: none;
-  background: none;
-}
-.chosen-container.chosen-with-drop .chosen-single div b {
-  background-position: -16px 12px;
-}
-.chosen-container .chosen-results li {
-  border: solid 1px white;
-}
-.chosen-container .chosen-results li.highlighted {
-  border: solid 1px #5FC5B8;
-  background: none;
-  color: #444;
+textarea {
+  height: 120px;
 }

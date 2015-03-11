@@ -1,0 +1,40 @@
+/**
+ * Stylesheet for integrating Chosen jQuery lib into Storefront Child theme.
+ */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+.chosen-container .chosen-single {
+  border: solid 1px #ccc;
+  padding: 10px 15px;
+  line-height: 24px;
+  border-radius: 2px;
+  box-shadow: none;
+  background-color: transparent;
+  color: #444;
+  height: auto;
+  background: none;
+}
+.chosen-container .chosen-single span {
+  margin-right: .5em;
+  font-weight: normal;
+  color: #444;
+  font-size: 14px;
+}
+.chosen-container .chosen-single div b {
+  background-position: 2px 12px;
+}
+.chosen-container.chosen-with-drop .chosen-single {
+  border: solid 1px #ccc;
+  box-shadow: none;
+  background: none;
+}
+.chosen-container.chosen-with-drop .chosen-single div b {
+  background-position: -16px 12px;
+}
+.chosen-container .chosen-results li {
+  border: solid 1px white;
+}
+.chosen-container .chosen-results li.highlighted {
+  border: solid 1px #5FC5B8;
+  background: none;
+  color: #444;
+}
