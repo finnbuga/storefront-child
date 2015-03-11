@@ -173,6 +173,9 @@ function storefront_child_header() {
 			<nav class="secondary-nav" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'secondary', 'fallback_cb' => '' ) ); ?>
 			</nav><!-- #site-navigation -->
+			<?php if (is_front_page()) : ?>
+				<img class="banner" src="<?php echo get_stylesheet_directory_uri(); ?>/img/banner.png" />
+			<?php endif; ?>
 		</div>
 	</div>
 <?php
