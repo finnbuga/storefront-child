@@ -339,6 +339,14 @@ ul.menu > li {
   border: none;
 }
 
+@media screen and (min-width: 768px) {
+  .hentry.type-post .entry-content {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 /**
  * Widgets
  */

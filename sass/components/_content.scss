@@ -10,3 +10,11 @@
 		}
 	}
 }
+
+@media screen and (min-width: 768px) {
+	.hentry.type-post {
+		.entry-content {
+			@include span(9 of 9);
+		}
+	}
+}
