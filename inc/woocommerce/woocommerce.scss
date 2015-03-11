@@ -325,6 +325,16 @@ a.remove {
 	}
 }
 
+/**
+ * My Account
+ */
+.my_account_orders {
+	.button {
+	    padding: 10px 20px;
+	    font-size: 12px;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	/**
 	 * Checkout
