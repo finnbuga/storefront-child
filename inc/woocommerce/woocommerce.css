@@ -5,6 +5,12 @@
 /**
  * Products
  */
+.post-type-archive-product h1,
+.post-type-archive-product .woocommerce-ordering,
+.post-type-archive-product .woocommerce-result-count {
+  display: none;
+}
+
 ul.products li.product figure {
   position: relative;
   min-height: 240px;
@@ -307,6 +313,78 @@ a.remove {
 }
 
 @media screen and (min-width: 768px) {
+  /**
+   * Products
+   */
+  .woocommerce.archive .content-area {
+    width: 65.71429%;
+    float: right;
+    margin-right: 0;
+  }
+  .woocommerce.archive .widget-area {
+    display: block;
+    width: 31.42857%;
+    float: left;
+    margin-right: 2.85714%;
+  }
+
+  /**
+   * Single Product
+   */
+  .woocommerce.single-product div.product {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .woocommerce.single-product div.product:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .woocommerce.single-product div.product .images {
+    width: 40.84507%;
+    float: left;
+    margin-right: 1.40845%;
+  }
+  .woocommerce.single-product div.product .product_title {
+    width: 57.74648%;
+    float: right;
+    margin-right: 0;
+    clear: none;
+  }
+  .woocommerce.single-product div.product .summary {
+    width: 28.16901%;
+    float: left;
+    margin-right: 1.40845%;
+  }
+  .woocommerce.single-product div.product div[itemprop="offers"],
+  .woocommerce.single-product div.product .disponibilitate {
+    width: 11.26761%;
+    float: left;
+    margin-right: 1.40845%;
+  }
+  .woocommerce.single-product div.product .info-notes {
+    width: 15.49296%;
+    float: right;
+    margin-right: 0;
+  }
+  .woocommerce.single-product div.product .contact {
+    width: 28.16901%;
+    float: right;
+    margin-right: 0;
+  }
+  .woocommerce.single-product div.product .cart {
+    width: 28.16901%;
+    float: right;
+    margin-right: 0;
+  }
+  .woocommerce.single-product div.product .related.products {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   /**
    * Checkout
    */

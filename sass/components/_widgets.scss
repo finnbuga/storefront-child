@@ -96,7 +96,6 @@
 	}
 }
 
-
 #mc-embedded-subscribe-form {
 	input[type=email] {
 		width: 100%;
@@ -107,4 +106,9 @@
 .fb_iframe_widget {
 	overflow: hidden;
 	max-width: 100%;
+}
+
+.legal {
+    margin-top: 1.618em;
+    text-align: center;
 }

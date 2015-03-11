@@ -21,12 +21,12 @@ Text Domain: storefront-child
     max-width: none;
   }
   .site-header #top-zone-wrapper .top-message {
-    width: 39.13043%;
+    width: 40%;
     float: left;
-    margin-right: 4.34783%;
+    margin-right: 2.85714%;
   }
   .site-header #top-zone-wrapper .top-menu {
-    width: 56.52174%;
+    width: 57.14286%;
     float: right;
     margin-right: 0;
   }
@@ -40,72 +40,6 @@ Text Domain: storefront-child
 
   .widget-area {
     display: none;
-  }
-
-  .woocommerce.archive .content-area {
-    width: 65.21739%;
-    float: right;
-    margin-right: 0;
-  }
-  .woocommerce.archive .widget-area {
-    display: block;
-    width: 30.43478%;
-    float: left;
-    margin-right: 4.34783%;
-  }
-
-  .woocommerce.single-product div.product {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .woocommerce.single-product div.product:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-  .woocommerce.single-product div.product .images {
-    width: 40.42553%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-  .woocommerce.single-product div.product .product_title {
-    width: 57.44681%;
-    float: right;
-    margin-right: 0;
-    clear: none;
-  }
-  .woocommerce.single-product div.product .summary {
-    width: 27.65957%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-  .woocommerce.single-product div.product div[itemprop="offers"],
-  .woocommerce.single-product div.product .disponibilitate {
-    width: 10.6383%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-  .woocommerce.single-product div.product .info-notes {
-    width: 14.89362%;
-    float: right;
-    margin-right: 0;
-  }
-  .woocommerce.single-product div.product .contact {
-    width: 27.65957%;
-    float: right;
-    margin-right: 0;
-  }
-  .woocommerce.single-product div.product .cart {
-    width: 27.65957%;
-    float: right;
-    margin-right: 0;
-  }
-  .woocommerce.single-product div.product .related.products {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 /**
@@ -171,15 +105,6 @@ a:hover {
 }
 
 /**
- * Main content area
- */
-.post-type-archive h1,
-.woocommerce-ordering,
-.woocommerce-result-count {
-  display: none;
-}
-
-/**
  * Footer
  */
 .site-footer {
@@ -198,11 +123,6 @@ a:hover {
 }
 .site-footer a:not(.button):hover {
   color: #5FC5B8;
-}
-
-.legal {
-  margin-top: 1.618em;
-  text-align: center;
 }
 
 /**
@@ -470,6 +390,11 @@ ul.menu > li {
 .fb_iframe_widget {
   overflow: hidden;
   max-width: 100%;
+}
+
+.legal {
+  margin-top: 1.618em;
+  text-align: center;
 }
 
 /**

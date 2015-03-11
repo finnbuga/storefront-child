@@ -2,6 +2,8 @@
  * General Layout
  */
 
+@include layout(24 1/2);
+		
 .col-full {
     max-width: 1150px;
 }
@@ -23,54 +25,9 @@
     	}
     }
 	.content-area {
-		@include span(12 of 12);
+		@include span(full);
 	}
 	.widget-area {
 		display: none;
-	}
-	.woocommerce.archive {
-		.content-area {
-			@include span(last 8 of 12);
-		}
-
-		.widget-area {
-			display: block;
-			@include span(4 of 12);
-		}
-	}
-	
-	.woocommerce.single-product div.product {
-		@include container;
-		// Left column.
-		.images {
-			@include span(10 of 24);
-		}
-		// Middle and right columns.
-		.product_title {
-			@include span(last 14 of 24);
-			clear: none;
-		}
-		// Middle column.
-		.summary {
-			@include span(7 of 24);
-		}
-		// Right column.
-		div[itemprop="offers"],
-		.disponibilitate {
-			@include span(3 of 24);
-		}
-		.info-notes {
-			@include span(last 4 of 24);
-		}
-		.contact {
-			@include span(last 7 of 24);
-		}
-		.cart {
-			@include span(last 7 of 24);
-		}
-		// Bellow.
-		.related.products {
-			@include span(12 of 12);
-		}
 	}
 }
