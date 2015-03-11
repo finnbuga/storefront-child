@@ -36,3 +36,15 @@ function storefront_child_woocommerce_shorten_shipping_line( $label, $method ) {
 	return wc_price( $method->cost );
 }
 add_filter( 'woocommerce_cart_shipping_method_full_label', 'storefront_child_woocommerce_shorten_shipping_line', 10, 2 );
+
+
+/**
+ * Customise homepage.
+ */
+function storefront_child_woocommerce_customise_homepage() {
+	remove_action( 'homepage', storefront_homepage_content, 10);
+	remove_action( 'homepage', storefront_product_categories, 20);
+	remove_action( 'homepage', storefront_recent_products, 30);
+	remove_action( 'homepage', storefront_popular_products, 50);
+}
+add_action( 'init', 'storefront_child_woocommerce_customise_homepage' );
