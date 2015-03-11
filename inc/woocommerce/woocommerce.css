@@ -192,22 +192,31 @@ ul.products li.product .price {
 /**
  * Cart
  */
+table.cart {
+  margin-bottom: 0;
+}
 table.cart thead {
   text-indent: 0;
 }
-table.cart th,
-table.cart td {
-  padding: 30px 5px;
-  border-bottom: 1px solid #ccc;
+table.cart thead th {
+  padding: 15px 5px;
+  border-bottom: 2px solid black;
 }
 table.cart td {
   vertical-align: middle;
+  padding: 25px 5px;
+  border-bottom: 1px solid #ccc;
 }
 table.cart .product-thumbnail {
   display: table-cell;
 }
 table.cart .product-thumbnail img {
   margin: 0;
+}
+table.cart .product-price,
+table.cart .product-quantity,
+table.cart .product-subtotal {
+  text-align: right;
 }
 table.cart .variation dt,
 table.cart .variation dd {
@@ -228,9 +237,17 @@ table.cart .qty {
 .cart_totals {
   width: auto;
   float: none;
+  font-size: 20px;
 }
 .cart_totals h2 {
   display: none;
+}
+.cart_totals table th,
+.cart_totals table td {
+  padding: 9px 0;
+}
+.cart_totals table td {
+  text-align: right;
 }
 
 a.remove {
