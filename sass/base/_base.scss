@@ -6,21 +6,13 @@
  * Header
  */
 .site-header {
-    margin-bottom: 3em;
 	background-color: transparent;
-	padding-top: 0;
-	
-    .top-message,
-    .top-menu {
-        padding: 1em 0;
-    }
     
     .top-message {
         @include menu-links(12px);
     }
     
-    .logo {
-        margin-bottom: 2em;
+    .logo {      
         text-align: center;
         img {
             display: inline;
@@ -31,18 +23,11 @@
    	> .col-full {
 		max-width: none;
 	    .brand {
+	        border-top: 1px solid $color1;
+	        border-bottom: 1px solid $color1;
 	        background: transparent url("img/header_pattern.jpg") repeat top left;
 	    }
 	}
-
-    .brand {
-        border-top: 1px solid $color1;
-        border-bottom: 1px solid $color1;
-        background: transparent url("img/header_pattern.jpg") repeat top left;
-    }
-    .banner {
-	    margin-top: 40px;
-    }
 }
 
 /**

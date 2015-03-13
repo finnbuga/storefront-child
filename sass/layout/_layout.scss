@@ -8,15 +8,34 @@
 	}
 
 	.site-header {
+	    margin-bottom: 3em;
+	    padding-top: 1em;
+
 		.top-message {
 			@include span(5 of 12);
         }
+        
         .top-menu {
             @include span(last 7 of 12);
         }
+        
         .logo {
 	        @include span(full);
+		    margin-top: 35px;
+	        margin-bottom: 35px;
         }
+
+		.primary-nav {
+			margin-bottom: 1.5em;
+		}
+		
+		.secondary-nav {
+	    	margin: 1.5em 0;
+	    }
+	    
+	    .banner {
+		    margin-top: 40px;
+	    }
     }
     
 	.content-area {
