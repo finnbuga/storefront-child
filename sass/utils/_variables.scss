@@ -3,9 +3,20 @@
 $font: 'PT Sans', sans-serif;
 $header-font: 'PT Sans', sans-serif;
 
-$text-color:   #444; //dark-grey
-$link-color:   #555; //darker-grey
-$footer-color: #F7F7F7;
-$color1:       #5FC5B8; //green
-$color2:       #E0575E; //red
-$color3:       #CCC; //light-grey
+$color1:           #5FC5B8; //green
+$color2:           #E0575E; //red
+$color3:           #CCCCCC; //light-grey
+
+$text-color:       #444; //dark-grey
+$link-color:       #555; //darker-grey
+$link-hover-color: $color1;
+
+$font-size:        14px;
+
+$susy: (
+	columns: 12,
+	gutters: 1,
+	math: fluid,
+	output: float,
+	gutter-position: after
+);

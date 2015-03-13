@@ -365,7 +365,6 @@ a.remove {
 	 * Single Product
 	 */
 	.woocommerce.single-product div.product {
-		@include layout(24 1);
 		@include container(24);
 		
 		// LEFT: the gallery

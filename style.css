@@ -14,7 +14,7 @@ Text Domain: storefront-child
  */
 @media screen and (min-width: 768px) {
   .col-full {
-    max-width: 1150px;
+    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -24,6 +24,10 @@ Text Domain: storefront-child
     clear: both;
   }
 
+  .site-header {
+    margin-bottom: 3em;
+    padding-top: 1em;
+  }
   .site-header .top-message {
     width: 39.13043%;
     float: left;
@@ -39,6 +43,17 @@ Text Domain: storefront-child
     float: left;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .site-header .primary-nav {
+    margin-bottom: 1.5em;
+  }
+  .site-header .secondary-nav {
+    margin: 1.5em 0;
+  }
+  .site-header .banner {
+    margin-top: 40px;
   }
 
   .content-area {
@@ -85,13 +100,7 @@ a:hover {
  * Header
  */
 .site-header {
-  margin-bottom: 3em;
   background-color: transparent;
-  padding-top: 0;
-}
-.site-header .top-message,
-.site-header .top-menu {
-  padding: 1em 0;
 }
 .site-header .top-message {
   font-size: 12px;
@@ -101,7 +110,6 @@ a:hover {
   color: #444;
 }
 .site-header .logo {
-  margin-bottom: 2em;
   text-align: center;
 }
 .site-header .logo img {
@@ -111,15 +119,9 @@ a:hover {
   max-width: none;
 }
 .site-header > .col-full .brand {
-  background: transparent url("img/header_pattern.jpg") repeat top left;
-}
-.site-header .brand {
   border-top: 1px solid #5FC5B8;
   border-bottom: 1px solid #5FC5B8;
   background: transparent url("img/header_pattern.jpg") repeat top left;
-}
-.site-header .banner {
-  margin-top: 40px;
 }
 
 /**
@@ -203,16 +205,16 @@ ul.menu > li {
   /**
    * Primary Navigation
    */
-  #menu-main-menu {
+  .main-nav ul.menu {
     text-align: center;
   }
-  #menu-main-menu > li {
+  .main-nav ul.menu > li {
     margin-right: 50px;
   }
-  #menu-main-menu > li:last-child {
+  .main-nav ul.menu > li:last-child {
     margin-right: 0;
   }
-  #menu-main-menu > li > a {
+  .main-nav ul.menu > li > a {
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
@@ -224,7 +226,7 @@ ul.menu > li {
     padding: 25px 0 0;
     transition: all 0.35s ease-in-out;
   }
-  #menu-main-menu > li > a:hover, #menu-main-menu > li.current-menu-item > a {
+  .main-nav ul.menu > li > a:hover, .main-nav ul.menu > li.current-menu-item > a {
     color: #222;
     border-top: solid 2px #444;
   }
@@ -232,17 +234,16 @@ ul.menu > li {
   /**
    * Secondary Navigation
    */
-  #menu-colectii-meniu {
-    margin: 1.5em 0;
+  .secondary-nav ul.menu {
     text-align: center;
   }
-  #menu-colectii-meniu > li {
+  .secondary-nav ul.menu > li {
     margin-right: 5px;
   }
-  #menu-colectii-meniu > li:last-child {
+  .secondary-nav ul.menu > li:last-child {
     margin-right: 0;
   }
-  #menu-colectii-meniu > li > a {
+  .secondary-nav ul.menu > li > a {
     border: solid 2px #5FC5B8;
     box-shadow: none;
     background: transparent;
@@ -255,10 +256,10 @@ ul.menu > li {
     color: #E0575E;
     transition: all 0.35s ease-in-out;
   }
-  #menu-colectii-meniu > li > a:hover {
+  .secondary-nav ul.menu > li > a:hover {
     background: transparent;
   }
-  #menu-colectii-meniu > li > a:hover, #menu-colectii-meniu > li.current-menu-item > a {
+  .secondary-nav ul.menu > li > a:hover, .secondary-nav ul.menu > li.current-menu-item > a {
     color: black !important;
   }
 }
