@@ -104,7 +104,7 @@ ul.products li.product .price {
 }
 .single-product div.product .product_meta ul.custom_taxonomies label,
 .single-product div.product .product_meta ul.custom_taxonomies span {
-  color: #444;
+  color: #444444;
 }
 .single-product div.product div[itemprop="offers"] {
   border-right: solid 1px #ccc;

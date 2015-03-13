@@ -9,14 +9,14 @@
   border-radius: 2px;
   box-shadow: none;
   background-color: transparent;
-  color: #444;
+  color: #444444;
   height: auto;
   background: none;
 }
 .chosen-container .chosen-single span {
   margin-right: .5em;
   font-weight: normal;
-  color: #444;
+  color: #444444;
   font-size: 14px;
 }
 .chosen-container .chosen-single div b {
@@ -36,5 +36,5 @@
 .chosen-container .chosen-results li.highlighted {
   border: solid 1px #5FC5B8;
   background: none;
-  color: #444;
+  color: #444444;
 }
