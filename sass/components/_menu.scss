@@ -16,33 +16,28 @@ ul.menu {
 	/**
 	 * Top Menu
 	 */
-    .top-message {
-        @include menu-links(12px);
-    }
     .top-menu {
-		ul.menu {
-    		text-align: right;
-			> li {
-                margin-right: 10px;
-                border-right: 1px solid #aaa;
-                padding-right: 10px;
-                line-height: .6em;
-                &:last-child {
-                    margin-right: 0;
-                    border-right: none;
-                    padding-right: 0;
-                }
-				> a {
-    				@include menu-links(12px);
-    				&.cart {
-        				color: $color2;
-        				&::before {
-							font-family: FontAwesome;
-	        				content: "\f07a";
-	        				margin-right: .5em;
-        				}
+		text-align: right;
+		> li {
+            margin-right: 10px;
+            border-right: 1px solid #aaa;
+            padding-right: 10px;
+            line-height: .6em;
+            &:last-child {
+                margin-right: 0;
+                border-right: none;
+                padding-right: 0;
+            }
+			> a {
+				@include menu-links(12px);
+				&.cart {
+    				color: $color2;
+    				&::before {
+						font-family: FontAwesome;
+        				content: "\f07a";
+        				margin-right: .5em;
     				}
-                }
+				}
             }
         }
     }
@@ -50,27 +45,25 @@ ul.menu {
 	/**
 	 * Primary Navigation
 	 */
-	.main-nav {
-		ul.menu {
-    		text-align: center;
-			> li {
-                margin-right: 50px;
-                &:last-child {
-                    margin-right: 0;
-                }
-				> a {
-    				@include menu-links;
-                    display: block;
-                    margin-top: -1px;
-                    border-top: solid 2px transparent;
-                    padding: 25px 0 0;
-                    transition: all 0.35s ease-in-out;
-                }
-                > a:hover,
-                &.current-menu-item > a {
-                    color: #222;
-                    border-top: solid 2px #444;                        
-                }
+	#menu-main-menu {
+		text-align: center;
+		> li {
+            margin-right: 50px;
+            &:last-child {
+                margin-right: 0;
+            }
+			> a {
+				@include menu-links;
+                display: block;
+                margin-top: -1px;
+                border-top: solid 2px transparent;
+                padding: 25px 0 0;
+                transition: all 0.35s ease-in-out;
+            }
+            > a:hover,
+            &.current-menu-item > a {
+                color: #222;
+                border-top: solid 2px #444;                        
             }
         }
     }
@@ -78,24 +71,22 @@ ul.menu {
 	/**
 	 * Secondary Navigation
 	 */
-	.secondary-nav {
+	#menu-colectii-meniu {
     	margin: 1.5em 0;
-		ul.menu {
-    		text-align: center;
-			> li {
-                margin-right: 5px;
-                &:last-child {
-                    margin-right: 0;
-                }
-				> a {
-    				@include sexy-border;
-                }
-                > a:hover,
-                &.current-menu-item > a {
-    				color: black !important;
-                }
-                
+		text-align: center;
+		> li {
+            margin-right: 5px;
+            &:last-child {
+                margin-right: 0;
             }
+			> a {
+				@include sexy-border;
+            }
+            > a:hover,
+            &.current-menu-item > a {
+				color: black !important;
+            }
+            
         }
     }
 }

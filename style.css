@@ -12,22 +12,32 @@ Text Domain: storefront-child
 /**
  * General Layout
  */
-.col-full {
-  max-width: 1150px;
-}
-
 @media screen and (min-width: 768px) {
-  .site-header > .col-full {
-    max-width: none;
+  .col-full {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .site-header #top-zone-wrapper .top-message {
-    width: 40%;
+  .col-full:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  .site-header .top-message {
+    width: 39.13043%;
     float: left;
-    margin-right: 2.85714%;
+    margin-right: 4.34783%;
   }
-  .site-header #top-zone-wrapper .top-menu {
-    width: 57.14286%;
+  .site-header .top-menu {
+    width: 56.52174%;
     float: right;
+    margin-right: 0;
+  }
+  .site-header .logo {
+    width: 100%;
+    float: left;
+    margin-left: 0;
     margin-right: 0;
   }
 
@@ -36,10 +46,6 @@ Text Domain: storefront-child
     float: left;
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .widget-area {
-    display: none;
   }
 }
 /**
@@ -80,22 +86,34 @@ a:hover {
  */
 .site-header {
   margin-bottom: 3em;
-  background-color: white;
+  background-color: transparent;
   padding-top: 0;
 }
-.site-header #top-zone-wrapper {
+.site-header .top-message,
+.site-header .top-menu {
   padding: 1em 0;
-  background-color: white;
 }
-.site-header #logo-zone-wrapper {
+.site-header .top-message {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #444;
+}
+.site-header .logo {
   margin-bottom: 2em;
   text-align: center;
 }
-.site-header #logo-zone-wrapper img {
+.site-header .logo img {
   display: inline;
-  height: 93px;
 }
-.site-header #brand-zone-wrapper {
+.site-header > .col-full {
+  max-width: none;
+}
+.site-header > .col-full .brand {
+  background: transparent url("img/header_pattern.jpg") repeat top left;
+}
+.site-header .brand {
   border-top: 1px solid #5FC5B8;
   border-bottom: 1px solid #5FC5B8;
   background: transparent url("img/header_pattern.jpg") repeat top left;
@@ -152,39 +170,31 @@ ul.menu > li {
   /**
    * Top Menu
    */
-  .top-message {
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #444;
-  }
-
-  .top-menu ul.menu {
+  .top-menu {
     text-align: right;
   }
-  .top-menu ul.menu > li {
+  .top-menu > li {
     margin-right: 10px;
     border-right: 1px solid #aaa;
     padding-right: 10px;
     line-height: .6em;
   }
-  .top-menu ul.menu > li:last-child {
+  .top-menu > li:last-child {
     margin-right: 0;
     border-right: none;
     padding-right: 0;
   }
-  .top-menu ul.menu > li > a {
+  .top-menu > li > a {
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #444;
   }
-  .top-menu ul.menu > li > a.cart {
+  .top-menu > li > a.cart {
     color: #E0575E;
   }
-  .top-menu ul.menu > li > a.cart::before {
+  .top-menu > li > a.cart::before {
     font-family: FontAwesome;
     content: "\f07a";
     margin-right: .5em;
@@ -193,16 +203,16 @@ ul.menu > li {
   /**
    * Primary Navigation
    */
-  .main-nav ul.menu {
+  #menu-main-menu {
     text-align: center;
   }
-  .main-nav ul.menu > li {
+  #menu-main-menu > li {
     margin-right: 50px;
   }
-  .main-nav ul.menu > li:last-child {
+  #menu-main-menu > li:last-child {
     margin-right: 0;
   }
-  .main-nav ul.menu > li > a {
+  #menu-main-menu > li > a {
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
@@ -214,7 +224,7 @@ ul.menu > li {
     padding: 25px 0 0;
     transition: all 0.35s ease-in-out;
   }
-  .main-nav ul.menu > li > a:hover, .main-nav ul.menu > li.current-menu-item > a {
+  #menu-main-menu > li > a:hover, #menu-main-menu > li.current-menu-item > a {
     color: #222;
     border-top: solid 2px #444;
   }
@@ -222,19 +232,17 @@ ul.menu > li {
   /**
    * Secondary Navigation
    */
-  .secondary-nav {
+  #menu-colectii-meniu {
     margin: 1.5em 0;
-  }
-  .secondary-nav ul.menu {
     text-align: center;
   }
-  .secondary-nav ul.menu > li {
+  #menu-colectii-meniu > li {
     margin-right: 5px;
   }
-  .secondary-nav ul.menu > li:last-child {
+  #menu-colectii-meniu > li:last-child {
     margin-right: 0;
   }
-  .secondary-nav ul.menu > li > a {
+  #menu-colectii-meniu > li > a {
     border: solid 2px #5FC5B8;
     box-shadow: none;
     background: transparent;
@@ -247,10 +255,10 @@ ul.menu > li {
     color: #E0575E;
     transition: all 0.35s ease-in-out;
   }
-  .secondary-nav ul.menu > li > a:hover {
+  #menu-colectii-meniu > li > a:hover {
     background: transparent;
   }
-  .secondary-nav ul.menu > li > a:hover, .secondary-nav ul.menu > li.current-menu-item > a {
+  #menu-colectii-meniu > li > a:hover, #menu-colectii-meniu > li.current-menu-item > a {
     color: black !important;
   }
 }

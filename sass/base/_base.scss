@@ -7,21 +7,35 @@
  */
 .site-header {
     margin-bottom: 3em;
-	background-color: white;
+	background-color: transparent;
 	padding-top: 0;
-    #top-zone-wrapper {
+	
+    .top-message,
+    .top-menu {
         padding: 1em 0;
-        background-color: white;
     }
-    #logo-zone-wrapper {
+    
+    .top-message {
+        @include menu-links(12px);
+    }
+    
+    .logo {
         margin-bottom: 2em;
         text-align: center;
         img {
             display: inline;
-            height: 93px;
         }
     }
-    #brand-zone-wrapper {
+    
+    // Set a wide background.
+   	> .col-full {
+		max-width: none;
+	    .brand {
+	        background: transparent url("img/header_pattern.jpg") repeat top left;
+	    }
+	}
+
+    .brand {
         border-top: 1px solid $color1;
         border-bottom: 1px solid $color1;
         background: transparent url("img/header_pattern.jpg") repeat top left;

@@ -2,32 +2,24 @@
  * General Layout
  */
 
-@include layout(24 1/2);
-		
-.col-full {
-    max-width: 1150px;
-}
-
 @media screen and (min-width: 768px) {
+	.col-full {
+	    @include container(1150px);
+	}
+
 	.site-header {
-		> .col-full {
-			max-width: none;
-		}
-    	#top-zone-wrapper {
-        	//position: fixed;
-        	//top: 0;
-    		.top-message {
-    			@include span(5 of 12);
-            }
-            .top-menu {
-                @include span(7 of 12 last);
-            }
-    	}
+		.top-message {
+			@include span(5 of 12);
+        }
+        .top-menu {
+            @include span(last 7 of 12);
+        }
+        .logo {
+	        @include span(full);
+        }
     }
+    
 	.content-area {
 		@include span(full);
-	}
-	.widget-area {
-		display: none;
 	}
 }
