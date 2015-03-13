@@ -9,12 +9,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: storefront-child
 */
 
-//@import 'bourbon';
 @import 'susy';
 
-@import '../storefront/sass/utils/variables';
 @import 'sass/utils/variables';
-@import '../storefront/sass/utils/mixins';
 @import 'sass/utils/mixins';
 
 @import 'sass/layout/layout';
