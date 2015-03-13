@@ -3,7 +3,6 @@
  */
 
 @import 'susy';
-@include layout(24 1/2);
 
 @import '../../sass/utils/variables';
 @import '../../sass/utils/mixins';
@@ -344,39 +343,48 @@ a.remove {
 }
 
 @media screen and (min-width: 768px) {
+
 	/**
 	 * Products
 	 */
 	.woocommerce.archive {
+		
+		// Make the Widget Area visible and put it on the left.		
+		.widget-area {
+			display: block;
+			@include span(first 4 of 12);
+		}
+		
 		.content-area {
 			@include span(last 8 of 12);
 		}
 
-		.widget-area {
-			display: block;
-			@include span(4 of 12);
-		}
 	}
 
 	/**
 	 * Single Product
 	 */
 	.woocommerce.single-product div.product {
+		@include layout(24 1);
 		@include container(24);
-		// Left column.
+		
+		// LEFT: the gallery
 		.images {
 			@include span(10 of 24);
 		}
-		// Middle and right columns.
+		
+		// MIDDLE & RIGHT: product name
 		.product_title {
 			@include span(last 14 of 24);
 			clear: none;
 		}
-		// Middle column.
+		
+		// MIDDLE: product description
 		.summary {
 			@include span(7 of 24);
 		}
-		// Right column.
+		
+		// RIGHT: price, extra info & add to cart button
 		div[itemprop="offers"],
 		.disponibilitate {
 			@include span(3 of 24);
@@ -390,9 +398,10 @@ a.remove {
 		.cart {
 			@include span(last 7 of 24);
 		}
-		// Bellow.
+		
+		// BELLOW: related products
 		.related.products {
-			@include span(12 of 12);
+			@include span(full);
 		}
 	}
 

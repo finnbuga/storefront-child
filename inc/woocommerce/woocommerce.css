@@ -316,16 +316,16 @@ a.remove {
   /**
    * Products
    */
-  .woocommerce.archive .content-area {
-    width: 65.71429%;
-    float: right;
-    margin-right: 0;
-  }
   .woocommerce.archive .widget-area {
     display: block;
-    width: 31.42857%;
+    width: 32.20339%;
     float: left;
-    margin-right: 2.85714%;
+    margin-right: 1.69492%;
+  }
+  .woocommerce.archive .content-area {
+    width: 66.10169%;
+    float: right;
+    margin-right: 0;
   }
 
   /**
@@ -342,39 +342,39 @@ a.remove {
     clear: both;
   }
   .woocommerce.single-product div.product .images {
-    width: 40.84507%;
+    width: 40.42553%;
     float: left;
-    margin-right: 1.40845%;
+    margin-right: 2.12766%;
   }
   .woocommerce.single-product div.product .product_title {
-    width: 57.74648%;
+    width: 57.44681%;
     float: right;
     margin-right: 0;
     clear: none;
   }
   .woocommerce.single-product div.product .summary {
-    width: 28.16901%;
+    width: 27.65957%;
     float: left;
-    margin-right: 1.40845%;
+    margin-right: 2.12766%;
   }
   .woocommerce.single-product div.product div[itemprop="offers"],
   .woocommerce.single-product div.product .disponibilitate {
-    width: 11.26761%;
+    width: 10.6383%;
     float: left;
-    margin-right: 1.40845%;
+    margin-right: 2.12766%;
   }
   .woocommerce.single-product div.product .info-notes {
-    width: 15.49296%;
+    width: 14.89362%;
     float: right;
     margin-right: 0;
   }
   .woocommerce.single-product div.product .contact {
-    width: 28.16901%;
+    width: 27.65957%;
     float: right;
     margin-right: 0;
   }
   .woocommerce.single-product div.product .cart {
-    width: 28.16901%;
+    width: 27.65957%;
     float: right;
     margin-right: 0;
   }
