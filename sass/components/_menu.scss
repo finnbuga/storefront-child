@@ -32,11 +32,8 @@ ul.menu {
 				@include menu-links(12px);
 				&.cart {
     				color: $color2;
-    				&::before {
-						font-family: FontAwesome;
-        				content: "\f07a";
-        				margin-right: .5em;
-    				}
+    				@include icon("\f07a");
+
 				}
             }
         }

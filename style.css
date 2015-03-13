@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Storefront Child
 Description: Storefront starter child theme.
@@ -196,7 +197,7 @@ ul.menu > li {
   }
   .top-menu > li > a.cart::before {
     font-family: FontAwesome;
-    content: "\f07a";
+    content: "";
     margin-right: .5em;
   }
 
