@@ -148,10 +148,8 @@ a:hover {
 /**
  * Tables
  */
+table tbody td,
 table tbody tr:nth-child(2n) td {
-  background: none;
-}
-table tbody td {
   background: none;
 }
 

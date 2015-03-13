@@ -6,12 +6,15 @@
  * Header
  */
 .site-header {
+	
+	// Reset parent theme styling
 	background-color: transparent;
     
     .top-message {
         @include menu-links(12px);
     }
     
+    // Place the logo in the center.
     .logo {      
         text-align: center;
         img {
@@ -34,6 +37,8 @@
  * Footer
  */
 .site-footer {
+	
+	// Reset parent theme styling
 	color: $text-color;
 	h1,
 	h2,
@@ -46,7 +51,7 @@
 	a:not(.button) {
 		color: $link-color;
 		&:hover {
-			color: $color1;
+			color: $link-hover-color;
 		}
 	}
 }
@@ -55,13 +60,11 @@
  * Tables
  */
 table {
+	
+	// Reset parent theme styling
 	tbody {
-		tr:nth-child(2n) {
-			td {
-				background: none;
-			}
-		}
-		td {
+		td,
+		tr:nth-child(2n) td {
 			background: none;
 		}
 	}
