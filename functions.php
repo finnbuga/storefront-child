@@ -143,11 +143,13 @@ add_action( 'init', 'storefront_child_remove_header' );
 function storefront_child_header() {
 ?>
 	<div class="style col-full">
-		
-		<p class="top-message">
+
+		<?php /**** Top Message ****/ ?>		
+		<div class="top-message">
 			Livrare prin curier cu plata ramburs
-		</p>
-		
+		</div>
+
+		<?php /**** Top Menu ****/ ?>
 		<ul class="top-menu menu">
 			<li><a href="<?php bloginfo('url'); ?>/contact" title="Contact">Contact</a></li>
 			<?php if ( $myaccount_page_id = get_option( 'woocommerce_myaccount_page_id' ) ) : ?>
@@ -155,7 +157,8 @@ function storefront_child_header() {
 			<?php endif; ?>                    
 			<li><a class="cart" href="<?php global $woocommerce; echo $woocommerce->cart->get_cart_url(); ?>"><?php printf( __( 'Cosul meu (%s)'), $woocommerce->cart->cart_contents_count ); ?></a></li>
 		</ul>
-		
+
+		<?php /**** Logo ****/ ?>
 		<div class="logo">
 			<a href='<?php echo home_url( '/' ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'>
 				<img src="<?php print(get_stylesheet_directory_uri() . '/img/logo.png'); ?>" width="293" height="93" alt="La Muse Chic">
@@ -166,17 +169,24 @@ function storefront_child_header() {
 	
 	<div class="style brand">
 		<div class="style col-full">
-	
-			<button class="menu-toggle"><?php apply_filters( 'storefront_menu_toggle_text', $content = _e( 'Primary Menu', 'storefront' ) ); ?></button>
-			<?php wp_nav_menu( array(
-				'theme_location'  => 'primary',
-				'container'       => false ) ); ?>
-		
-			<?php wp_nav_menu( array(
-				'theme_location' => 'secondary',
-				'container'       => false,
-				'fallback_cb' => '' ) ); ?>
 			
+			<?php /**** Main Navigation ****/ ?>
+			<button class="menu-toggle"><?php apply_filters( 'storefront_menu_toggle_text', $content = _e( 'Primary Menu', 'storefront' ) ); ?></button>
+			<nav class="main-nav" role="navigation">
+				<?php wp_nav_menu( array(
+					'theme_location'  => 'primary',
+					'container'       => false ) ); ?>
+			</nav>
+			
+			<?php /**** Secondary Navigation ****/ ?>
+			<nav class="secondary-nav" role="navigation">
+				<?php wp_nav_menu( array(
+					'theme_location' => 'secondary',
+					'container'       => false,
+					'fallback_cb' => '' ) ); ?>
+			</nav>
+			
+			<?php /**** Banner ****/ ?>
 			<?php if (is_front_page()) : ?>
 				<div class="banner">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/banner.png" width="1140" height="500" alt="tanara domnisoara cu pantofi, poseta si pisic conduce o masina">

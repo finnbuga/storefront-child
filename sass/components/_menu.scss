@@ -45,25 +45,27 @@ ul.menu {
 	/**
 	 * Primary Navigation
 	 */
-	#menu-main-menu {
-		text-align: center;
-		> li {
-            margin-right: 50px;
-            &:last-child {
-                margin-right: 0;
-            }
-			> a {
-				@include menu-links;
-                display: block;
-                margin-top: -1px;
-                border-top: solid 2px transparent;
-                padding: 25px 0 0;
-                transition: all 0.35s ease-in-out;
-            }
-            > a:hover,
-            &.current-menu-item > a {
-                color: #222;
-                border-top: solid 2px #444;                        
+	.main-nav {
+		ul.menu {
+    		text-align: center;
+			> li {
+                margin-right: 50px;
+                &:last-child {
+                    margin-right: 0;
+                }
+				> a {
+    				@include menu-links;
+                    display: block;
+                    margin-top: -1px;
+                    border-top: solid 2px transparent;
+                    padding: 25px 0 0;
+                    transition: all 0.35s ease-in-out;
+                }
+                > a:hover,
+                &.current-menu-item > a {
+                    color: #222;
+                    border-top: solid 2px #444;                        
+                }
             }
         }
     }
@@ -71,22 +73,22 @@ ul.menu {
 	/**
 	 * Secondary Navigation
 	 */
-	#menu-colectii-meniu {
-    	margin: 1.5em 0;
-		text-align: center;
-		> li {
-            margin-right: 5px;
-            &:last-child {
-                margin-right: 0;
+	.secondary-nav {
+		ul.menu {
+    		text-align: center;
+			> li {
+                margin-right: 5px;
+                &:last-child {
+                    margin-right: 0;
+                }
+				> a {
+    				@include sexy-border;
+                }
+                > a:hover,
+                &.current-menu-item > a {
+    				color: black !important;
+                }
             }
-			> a {
-				@include sexy-border;
-            }
-            > a:hover,
-            &.current-menu-item > a {
-				color: black !important;
-            }
-            
         }
     }
 }
