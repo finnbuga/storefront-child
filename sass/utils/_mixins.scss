@@ -1,4 +1,4 @@
-@mixin menu-links($font-size : 13px) {
+@mixin menu-links($font-size: $font-size) {
     font-size: $font-size;
     font-weight: bold;
     text-transform: uppercase;

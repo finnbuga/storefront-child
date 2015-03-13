@@ -174,28 +174,28 @@ ul.menu > li {
   .top-menu {
     text-align: right;
   }
-  .top-menu > li {
+  .top-menu li {
     margin-right: 10px;
     border-right: 1px solid #aaa;
     padding-right: 10px;
     line-height: .6em;
   }
-  .top-menu > li:last-child {
+  .top-menu li:last-child {
     margin-right: 0;
     border-right: none;
     padding-right: 0;
   }
-  .top-menu > li > a {
+  .top-menu li a {
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #444444;
   }
-  .top-menu > li > a.cart {
+  .top-menu li a.cart {
     color: #E0575E;
   }
-  .top-menu > li > a.cart::before {
+  .top-menu li a.cart::before {
     font-family: FontAwesome;
     content: "";
     margin-right: .5em;
@@ -207,14 +207,14 @@ ul.menu > li {
   .main-nav ul.menu {
     text-align: center;
   }
-  .main-nav ul.menu > li {
+  .main-nav ul.menu li {
     margin-right: 50px;
   }
-  .main-nav ul.menu > li:last-child {
+  .main-nav ul.menu li:last-child {
     margin-right: 0;
   }
-  .main-nav ul.menu > li > a {
-    font-size: 13px;
+  .main-nav ul.menu li a {
+    font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -225,9 +225,8 @@ ul.menu > li {
     padding: 25px 0 0;
     transition: all 0.35s ease-in-out;
   }
-  .main-nav ul.menu > li > a:hover, .main-nav ul.menu > li.current-menu-item > a {
-    color: #222;
-    border-top: solid 2px #444;
+  .main-nav ul.menu li a:hover, .main-nav ul.menu li.current-menu-item > a {
+    border-top: solid 2px #444444;
   }
 
   /**
@@ -236,13 +235,13 @@ ul.menu > li {
   .secondary-nav ul.menu {
     text-align: center;
   }
-  .secondary-nav ul.menu > li {
+  .secondary-nav ul.menu li {
     margin-right: 5px;
   }
-  .secondary-nav ul.menu > li:last-child {
+  .secondary-nav ul.menu li:last-child {
     margin-right: 0;
   }
-  .secondary-nav ul.menu > li > a {
+  .secondary-nav ul.menu li a {
     border: solid 2px #5FC5B8;
     box-shadow: none;
     background: transparent;
@@ -255,10 +254,10 @@ ul.menu > li {
     color: #E0575E;
     transition: all 0.35s ease-in-out;
   }
-  .secondary-nav ul.menu > li > a:hover {
+  .secondary-nav ul.menu li a:hover {
     background: transparent;
   }
-  .secondary-nav ul.menu > li > a:hover, .secondary-nav ul.menu > li.current-menu-item > a {
+  .secondary-nav ul.menu li a:hover, .secondary-nav ul.menu li.current-menu-item > a {
     color: black !important;
   }
 }
@@ -356,7 +355,7 @@ ul.menu > li {
 .widget_product_categories ul li span,
 .widget_nav_menu ul li a,
 .widget_nav_menu ul li span {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;

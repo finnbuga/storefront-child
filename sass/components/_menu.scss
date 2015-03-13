@@ -18,7 +18,9 @@ ul.menu {
 	 */
     .top-menu {
 		text-align: right;
-		> li {
+
+		li {
+			// Add vertical lines as separators
             margin-right: 10px;
             border-right: 1px solid #aaa;
             padding-right: 10px;
@@ -28,8 +30,11 @@ ul.menu {
                 border-right: none;
                 padding-right: 0;
             }
-			> a {
+            
+			a {
 				@include menu-links(12px);
+
+				// Add a cart icon to the Cart link
 				&.cart {
     				color: $color2;
     				@include icon("\f07a");
@@ -45,12 +50,15 @@ ul.menu {
 	.main-nav {
 		ul.menu {
     		text-align: center;
-			> li {
+    		
+			li {
                 margin-right: 50px;
                 &:last-child {
                     margin-right: 0;
                 }
-				> a {
+                
+                // Fancy border top effect.
+				a {
     				@include menu-links;
                     display: block;
                     margin-top: -1px;
@@ -58,10 +66,9 @@ ul.menu {
                     padding: 25px 0 0;
                     transition: all 0.35s ease-in-out;
                 }
-                > a:hover,
+                a:hover,
                 &.current-menu-item > a {
-                    color: #222;
-                    border-top: solid 2px #444;                        
+                    border-top: solid 2px $text-color;                        
                 }
             }
         }
@@ -73,15 +80,17 @@ ul.menu {
 	.secondary-nav {
 		ul.menu {
     		text-align: center;
-			> li {
+    		
+			li {
                 margin-right: 5px;
                 &:last-child {
                     margin-right: 0;
                 }
-				> a {
+                
+				a {
     				@include sexy-border;
                 }
-                > a:hover,
+                a:hover,
                 &.current-menu-item > a {
     				color: black !important;
                 }
