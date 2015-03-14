@@ -2,6 +2,11 @@
  * Content
  */
 
+/**
+ * Blog Archive
+ */
+
+// Reset parent theme styling.
 .hentry {
 	.entry-header {
 		h1 {
@@ -12,6 +17,7 @@
 }
 
 @media screen and (min-width: 768px) {
+	// Let the article take the full width.
 	.hentry.type-post {
 		.entry-content {
 			@include span(full);

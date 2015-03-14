@@ -257,12 +257,16 @@ ul.menu > li {
   .secondary-nav ul.menu li a:hover {
     background: transparent;
   }
-  .secondary-nav ul.menu li a:hover, .secondary-nav ul.menu li.current-menu-item > a {
+  .secondary-nav ul.menu li a:hover,
+  .secondary-nav ul.menu li .current-menu-item a {
     color: black !important;
   }
 }
 /**
  * Content
+ */
+/**
+ * Blog Archive
  */
 .hentry .entry-header h1 {
   margin-bottom: 0;

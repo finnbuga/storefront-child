@@ -91,7 +91,7 @@ ul.menu {
     				@include sexy-border;
                 }
                 a:hover,
-                &.current-menu-item > a {
+                .current-menu-item a {
     				color: black !important;
                 }
             }
