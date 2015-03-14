@@ -351,7 +351,6 @@ a.remove {
 		
 		// Make the Widget Area visible and put it on the left.		
 		.widget-area {
-			display: block;
 			@include span(first 4 of 12);
 		}
 		

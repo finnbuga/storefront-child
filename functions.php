@@ -44,6 +44,20 @@ add_filter( 'storefront_customizer_enabled', 'storefront_child_disable_customize
 
 
 /**
+ * Disable sidebar if not product listing page.
+ */
+function storefront_child_disable_sidebar($is_active_sidebar, $index) {
+	if ( is_post_type_archive( 'product' ) || is_tax( 'colectii' ) || is_tax( 'product_cat' ) ) {
+		return $is_active_sidebar;
+	}
+	else {
+		return false;
+	}
+}
+add_filter( 'is_active_sidebar', 'storefront_child_disable_sidebar', 10, 2 );
+
+
+/**
  * Display legal links instead of theme credit
  */
 function storefront_credit() {
