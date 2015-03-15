@@ -166,9 +166,7 @@ function storefront_child_header() {
 		<?php /**** Top Menu ****/ ?>
 		<ul class="top-menu menu">
 			<li><a href="<?php bloginfo('url'); ?>/contact" title="Contact">Contact</a></li>
-			<?php if ( $myaccount_page_id = get_option( 'woocommerce_myaccount_page_id' ) ) : ?>
-				<li><a href="<?php echo get_permalink( $myaccount_page_id ); ?>">Account</a></li>
-			<?php endif; ?>                    
+			<li><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><?php _e('My Account','woothemes'); ?></a></li>
 			<li><a class="cart" href="<?php global $woocommerce; echo $woocommerce->cart->get_cart_url(); ?>"><?php printf( __( 'Cosul meu (%s)'), $woocommerce->cart->cart_contents_count ); ?></a></li>
 		</ul>
 
