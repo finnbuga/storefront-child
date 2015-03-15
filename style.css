@@ -464,7 +464,7 @@ input[type="submit"].alt,
   transition: all 0.35s ease-in-out;
   padding: 10px 20px;
   line-height: 22px;
-  background: #E0575E;
+  background-color: #E0575E;
 }
 button.cta:hover, button.alt:hover,
 input[type="button"].cta:hover,
@@ -490,6 +490,7 @@ input[type="submit"].alt:hover,
 .button.alt:hover,
 .added_to_cart.cta:hover,
 .added_to_cart.alt:hover {
+  background-color: #E0575E;
   opacity: inherit;
 }
 

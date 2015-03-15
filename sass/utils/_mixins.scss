@@ -1,3 +1,4 @@
+// Bold, uppercase and spaced out text
 @mixin menu-links($font-size: $font-size) {
     font-size: $font-size;
     font-weight: bold;
@@ -6,6 +7,7 @@
     color: $text-color;
 }
 
+// Sexy borders for menus and buttons
 @mixin sexy-border($text-color : $color2, $border-color : $color1, $hover-color : transparent) {
     border: solid 2px $border-color;
     box-shadow: none;
@@ -23,6 +25,7 @@
     }
 }
 
+// Styling for form elements
 @mixin form-element {
 	border: solid 1px #ccc;
 	padding: 10px 15px;
@@ -33,6 +36,7 @@
 	color: $text-color;
 }
 
+// Style widget title with that bottom border
 @mixin widget-title {
     display: inline-block;
     margin: 0;
@@ -56,6 +60,7 @@
     padding-top: 25px;
 }
 
+// Insert FontAwesome icon
 @mixin icon($glyph: "\f05a", $color: $color1) {
 	&::before {
 		font-family: FontAwesome;

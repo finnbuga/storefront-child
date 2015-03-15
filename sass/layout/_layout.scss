@@ -3,6 +3,7 @@
  */
 
 @media screen and (min-width: 768px) {
+	// Reset parent theme styling
 	.col-full {
 	    @include container(1140px);
 	}

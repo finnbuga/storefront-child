@@ -11,14 +11,20 @@ input[type="submit"],
     @include sexy-border($color2, $color1, #f0b0a0);
     padding: 10px 20px;
     line-height: 22px;
-    height: 46px;
+    
+    // Calculate height to avoid re-rendering.
+    // paddings + line height + borders
+    height: 20px + 22px + 4px;
 	&.cta,
 	&.alt {
 		@include sexy-border(white, $color1, #f0b0a0);
 	    padding: 10px 20px;
 	    line-height: 22px;
-		background: $color2;
+	    
+	    // Reset parent theme styling
+		background-color: $color2;
 		&:hover {
+			background-color: $color2;
 			opacity: inherit;
 		}
 	}
@@ -32,6 +38,8 @@ input[type="search"],
 textarea,
 .input-text {
 	@include form-element;
+	
+	// Reset parent theme styling
 	&:focus {
 		background-color: transparent;
 		color: $text-color;
