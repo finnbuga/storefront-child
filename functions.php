@@ -46,15 +46,13 @@ add_filter( 'storefront_customizer_enabled', 'storefront_child_disable_customize
 /**
  * Disable sidebar if not product listing page.
  */
-function storefront_child_disable_sidebar($is_active_sidebar, $index) {
+function storefront_child_disable_sidebar() {
 	if ( is_post_type_archive( 'product' ) || is_tax( 'colectii' ) || is_tax( 'product_cat' ) ) {
-		return $is_active_sidebar;
+		return;
 	}
-	else {
-		return false;
-	}
+	remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
 }
-add_filter( 'is_active_sidebar', 'storefront_child_disable_sidebar', 10, 2 );
+add_action( 'storefront_sidebar', 'storefront_child_disable_sidebar', 1 );
 
 
 /**
