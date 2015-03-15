@@ -1,9 +1,7 @@
 # Compass CSS framework config file
 
-require "susy"
-require "bourbon"
-
 # Require any additional compass plugins here.
+require "susy"
 
 project_type = :stand_alone
 http_path = "/"
