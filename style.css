@@ -116,10 +116,7 @@ a:hover {
 .site-header .logo img {
   display: inline;
 }
-.site-header > .col-full {
-  max-width: none;
-}
-.site-header > .col-full .brand {
+.site-header .brand {
   border-top: 1px solid #5FC5B8;
   border-bottom: 1px solid #5FC5B8;
   background: transparent url("img/header_pattern.jpg") repeat top left;
