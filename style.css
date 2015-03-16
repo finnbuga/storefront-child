@@ -360,6 +360,8 @@ ul.menu > li {
    */
   .secondary-nav ul.menu {
     text-align: center;
+    height: 32px;
+    overflow: hidden;
   }
   .secondary-nav ul.menu li {
     margin-right: 5px;
@@ -379,6 +381,7 @@ ul.menu > li {
     letter-spacing: 1px;
     color: #E0575E;
     transition: all 0.35s ease-in-out;
+    display: block;
   }
   .secondary-nav ul.menu li a:hover {
     background: transparent;

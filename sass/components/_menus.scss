@@ -160,6 +160,10 @@ ul.menu {
 		ul.menu {
     		text-align: center;
     		
+    		// Hide items that go on the next line on smaller screens.
+    		height: 32px;
+    		overflow: hidden;
+
 			li {
                 margin-right: 5px;
                 &:last-child {
@@ -168,6 +172,7 @@ ul.menu {
                 
 				a {
     				@include sexy-border;
+    				display: block;
                 }
                 a:hover,
                 .current-menu-item a {
