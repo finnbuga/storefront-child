@@ -5,9 +5,8 @@
 /**
  * Products
  */
-.post-type-archive-product h1,
-.post-type-archive-product .woocommerce-ordering,
-.post-type-archive-product .woocommerce-result-count {
+.woocommerce.archive .woocommerce-ordering,
+.woocommerce.archive .woocommerce-result-count {
   display: none;
 }
 
