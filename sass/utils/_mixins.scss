@@ -25,6 +25,16 @@
     }
 }
 
+// Stylish borders
+@mixin stylish-border($top-padding: 10px, $bottom-padding: 15px, $border-color: #eee) {
+	border-bottom: double 3px $border-color;
+	padding: $top-padding 5px $bottom-padding;
+	&:last-child {
+	    border-bottom: none;
+	    padding-bottom: 0;
+	}
+}
+
 // Bigger & thiner form elements
 @mixin form-element {
 	border: solid 1px #ccc;
