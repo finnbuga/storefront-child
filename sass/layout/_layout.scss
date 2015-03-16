@@ -5,15 +5,15 @@
 .site-header {
 	padding-top: 1em;
 	
-	// Hide header elements:
+	.top-menu {
+		float: right;
+	}
+	
+	// Hide header elements
 	.top-message,
 	.main-nav,
 	.secondary-nav {
 		display: none;
-	}
-	
-	.top-menu {
-		float: right;
 	}
 	
 	.logo {
