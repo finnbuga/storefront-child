@@ -12,12 +12,44 @@ ul.menu {
     }
 }
 
+/**
+ * Top Menu
+ */
+.top-menu {
+	text-align: right;
+	
+		
+	@media screen and (max-width: 768px) {
+		li a {
+			// Hide all links
+			display: none;
+			
+			// Display only the cart
+			&.cart {
+				display: inline;
+				
+				// Replace the text with an icon
+				@include icon-replacement("\f07a", $color2, 35px);
+				
+				// Place the number of items above the icon
+				position: relative;
+				.no_items {
+					position: absolute;
+					top: -33px;
+					right: 5px;
+					
+					@include disk-background(17px, $color1, white, 12px);
+				}
+			}
+		}
+	}
+}
+		
 @media screen and (min-width: 768px) {
 	/**
 	 * Top Menu
 	 */
     .top-menu {
-		text-align: right;
 
 		li {
 			// Add vertical lines as separators
@@ -39,6 +71,14 @@ ul.menu {
     				color: $color2;
     				@include icon("\f07a");
 
+					.no_items {
+						&::before {
+							content: "(";
+						}
+						&::after {
+							content: ")";
+						}
+					}
 				}
             }
         }
