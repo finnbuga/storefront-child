@@ -1,4 +1,4 @@
-// Bold, uppercase and spaced out text
+// Bold, uppercase & spaced out text
 @mixin menu-links($font-size: $font-size) {
     font-size: $font-size;
     font-weight: bold;
@@ -25,7 +25,7 @@
     }
 }
 
-// Styling for form elements
+// Bigger & thiner form elements
 @mixin form-element {
 	border: solid 1px #ccc;
 	padding: 10px 15px;
@@ -61,10 +61,22 @@
 }
 
 // Insert FontAwesome icon
-@mixin icon($glyph: "\f05a", $color: $color1) {
+@mixin icon($glyph: "\f05a", $color: inherit) {
 	&::before {
 		font-family: FontAwesome;
 		content: $glyph;
 		margin-right: .5em;
+		color: $color;
+	}
+}
+
+// Insert FontAwesome icon
+@mixin icon-replacement($glyph: "\f05a", $color: $color1, $size: $font-size) {
+	@include icon($glyph, $color);
+	
+	// Hide text
+	font-size: 0;
+	&::before {
+		font-size: $size;
 	}
 }
