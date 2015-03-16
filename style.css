@@ -31,6 +31,14 @@ Text Domain: storefront-child
   margin-bottom: .5em;
 }
 
+.site-content {
+  margin-top: 1em;
+}
+
+.site-footer .footer-widgets {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .col-full {
     max-width: 1140px;
@@ -88,6 +96,10 @@ Text Domain: storefront-child
     float: left;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .site-footer .footer-widgets {
+    display: block;
   }
 }
 /**
