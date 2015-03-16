@@ -34,6 +34,14 @@ function storefront_child_woocommerce_customise_homepage() {
 
 
 /**
+ * Override theme default for products per page.
+ */
+function storefront_child_woocommerce_change_products_per_page() {
+	return 24;
+}
+
+
+/**
  * Display custom taxonomies' terms.
  */
 function storefront_child_display_custom_taxonomies() {

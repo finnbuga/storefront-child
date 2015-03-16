@@ -19,6 +19,11 @@ add_action( 'storefront_sidebar', 'storefront_child_disable_sidebar', 1 );
 add_action( 'init', 'storefront_child_woocommerce_customise_homepage' );
 
 /**
+ * Products
+ */
+add_filter( 'loop_shop_per_page', 'storefront_child_woocommerce_change_products_per_page', 20 );
+
+/**
  * Product page
  */
 remove_action( 'woocommerce_single_product_summary',        'woocommerce_template_single_title', 5 );
