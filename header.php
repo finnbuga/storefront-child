@@ -55,16 +55,16 @@
 				<?php /**** Main Navigation ****/ ?>
 				<nav class="main-nav" role="navigation">
 					<?php wp_nav_menu( array(
-						'theme_location'  => 'primary',
-						'container'       => false ) ); ?>
+						'theme_location' => 'primary',
+						'container'      => false ) ); ?>
 				</nav>
 				
 				<?php /**** Secondary Navigation ****/ ?>
 				<nav class="secondary-nav" role="navigation">
 					<?php wp_nav_menu( array(
 						'theme_location' => 'secondary',
-						'container'       => false,
-						'fallback_cb' => '' ) ); ?>
+						'container'      => false,
+						'fallback_cb'    => '' ) ); ?>
 				</nav>
 
 				<?php /**** Mobile Navigation ****/ ?>				
