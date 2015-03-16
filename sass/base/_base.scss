@@ -10,17 +10,19 @@
 	// Reset parent theme styling
 	background-color: transparent;
     
-    .top-message {
-        @include menu-links(12px);
-    }
-    
-    // Place the logo in the center.
-    .logo {      
-        text-align: center;
-        img {
-            display: inline;
-        }
-    }
+    @media screen and (min-width: 768px) {
+	    .top-message {
+	        @include menu-links(12px);
+	    }
+	    
+	    // Place the logo in the center.
+	    .logo {      
+	        text-align: center;
+	        img {
+	            display: inline;
+	        }
+	    }
+	}
     
     // Set a wide background.
     .brand {
