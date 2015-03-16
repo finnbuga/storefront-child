@@ -80,3 +80,16 @@
 		font-size: $size;
 	}
 }
+
+// Disk-like background.
+@mixin disk-background($radius: 20px, $bg-color: black, $color: white, $font-size: inherit) {
+	display: block;
+	width: $radius;
+	height: $radius;
+	line-height: $radius;
+	border-radius: $radius;
+	background: none repeat scroll 0% 0% $bg-color;
+	color: $color;
+	font-size: $font-size;
+	text-align: center;
+}
