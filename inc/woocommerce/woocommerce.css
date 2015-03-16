@@ -198,6 +198,12 @@ ul.products li.product .price {
   border: none;
   padding: 0;
 }
+.single-product div.product .related.products {
+  margin-top: 4em;
+}
+.single-product div.product .related.products h2 {
+  text-align: center;
+}
 
 /**
  * Cart
@@ -386,6 +392,9 @@ a.remove {
     float: left;
     margin-left: 0;
     margin-right: 0;
+  }
+  .woocommerce.single-product div.product .related.products h2 {
+    text-align: left;
   }
 
   /**

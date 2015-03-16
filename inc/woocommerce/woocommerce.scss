@@ -202,6 +202,14 @@ ul.products {
 			padding: 0;
 		}			
 	}
+	
+	.related.products {
+		margin-top: 4em;
+		
+		h2 {
+			text-align: center;
+		}
+	}
 }
 
 /**
@@ -403,6 +411,10 @@ a.remove {
 		// BELLOW: related products
 		.related.products {
 			@include span(full);
+			
+			h2 {
+				text-align: left;
+			}
 		}
 	}
 
