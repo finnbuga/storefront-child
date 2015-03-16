@@ -64,6 +64,10 @@ ul.products li.product .price {
 .single-product div.product .images .wp-post-image {
   margin: 0 auto;
 }
+.single-product div.product .images .thumbnails {
+  max-width: 460px;
+  margin: 0 auto;
+}
 .single-product div.product .images .thumbnails a.zoom {
   width: auto;
   height: 90px;
@@ -71,6 +75,7 @@ ul.products li.product .price {
 }
 .single-product div.product .images .thumbnails a.zoom.first {
   clear: none;
+  margin-left: 0;
 }
 .single-product div.product .images .thumbnails a.zoom.last {
   float: left;

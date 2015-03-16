@@ -28,7 +28,7 @@ ul.products {
                 right: 0;
 	            margin: 0 auto 10px;
             }
-        }
+        }       
         h3,
         .price {
             font-size: 15px;
@@ -64,12 +64,16 @@ ul.products {
 			margin: 0 auto;
 		}
 		.thumbnails {
+	        max-width: 460px;
+	        margin: 0 auto;
+	        
 			a.zoom {
 				width: auto;
 				height: 90px;
 				margin: 10px;
 				&.first {
 					clear: none;
+					margin-left: 0;
 				}
 				&.last {
 					float: left;
