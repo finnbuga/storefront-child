@@ -393,6 +393,11 @@ a.remove {
     margin-left: 0;
     margin-right: 0;
   }
+  .woocommerce.single-product div.product .related.products li.product {
+    width: 21.73913%;
+    float: left;
+    margin-right: 4.34783%;
+  }
   .woocommerce.single-product div.product .related.products h2 {
     text-align: left;
   }

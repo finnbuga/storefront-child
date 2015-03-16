@@ -410,7 +410,11 @@ a.remove {
 		
 		// BELLOW: related products
 		.related.products {
+			
 			@include span(full);
+			li.product {
+				@include span(3 of 12);
+			}
 			
 			h2 {
 				text-align: left;
