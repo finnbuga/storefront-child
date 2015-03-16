@@ -44,13 +44,52 @@ ul.menu {
 		}
 	}
 }
+
+/**
+ * Mobile Menu
+ */
+.main-navigation {
+	margin: 1em 0;
+	
+	
+	.menu-toggle {
+		// Reset parent theme styling
+		margin: 0;
 		
+		// Float icon to the right so right-handed can touch it.
+		&:before {
+			float: right;
+			margin-right: 0;
+		}
+	}
+	
+	ul.menu {
+		background-color: white;
+		
+		li {
+			display: list-item;
+
+			@include stylish-border(10px, 20px, #eeeeee);
+
+            a {
+				// Reset parent theme styling
+	            padding: 0;
+	            &:before {
+		            content: "";
+	            }
+
+                @include menu-links(12px);
+                font-weight: normal;
+            }
+		}
+	}
+}
+
 @media screen and (min-width: 768px) {
 	/**
 	 * Top Menu
 	 */
     .top-menu {
-
 		li {
 			// Add vertical lines as separators
             margin-right: 10px;
