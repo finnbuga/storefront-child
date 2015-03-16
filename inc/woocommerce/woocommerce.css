@@ -39,6 +39,7 @@ ul.products li.product .onsale {
   box-shadow: none;
   background: transparent;
   padding: 5px 45px 4px;
+  line-height: 19px;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;

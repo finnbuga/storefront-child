@@ -374,6 +374,7 @@ ul.menu > li {
     box-shadow: none;
     background: transparent;
     padding: 5px 45px 4px;
+    line-height: 19px;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
@@ -553,6 +554,7 @@ input[type="submit"],
   box-shadow: none;
   background: transparent;
   padding: 5px 45px 4px;
+  line-height: 19px;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
@@ -587,6 +589,7 @@ input[type="submit"].alt,
   box-shadow: none;
   background: transparent;
   padding: 5px 45px 4px;
+  line-height: 19px;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
