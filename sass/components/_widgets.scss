@@ -46,6 +46,8 @@
 		li {
 			// Reset parent theme styling
             display: list-item;
+            margin: 0;
+            
 			&:before {
 				content: "" !important;
 			}
@@ -55,17 +57,21 @@
 				}
 			}
 
-			@include stylish-border(10px, 15px, #eee);
+			@include stylish-border(15px, 5px, #eee);
 			
             // Submenus spacing
             ul.children {
                 margin: 0;
                 margin-left: 2em;
                 
-                li:first-child {
-                    margin-top: 17px;
-                    border-top: double 3px #eee;
-                    padding-top: 15px;
+                li {
+                	&:first-child {
+	                    margin-top: 15px;
+	                    border-top: double 3px #eee;
+					}
+					&:last-child {
+						padding-bottom: 0;
+					}
                 }
             }
 			
