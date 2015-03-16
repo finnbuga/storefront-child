@@ -9,6 +9,11 @@
 add_action( 'wp_enqueue_scripts', 'storefront_child_load_styles_and_scripts', 30 );
 
 /**
+ * Menus
+ */
+add_action( 'init', 'storefront_child_register_menus' );
+
+/**
  * Breadcrumb
  */
 add_action( 'init', 'storefront_child_remove_breadcrumb' );

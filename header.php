@@ -53,7 +53,6 @@
 			<div class="style col-full">
 				
 				<?php /**** Main Navigation ****/ ?>
-				<button class="menu-toggle"><?php apply_filters( 'storefront_menu_toggle_text', $content = _e( 'Primary Menu', 'storefront' ) ); ?></button>
 				<nav class="main-nav" role="navigation">
 					<?php wp_nav_menu( array(
 						'theme_location'  => 'primary',
@@ -66,6 +65,14 @@
 						'theme_location' => 'secondary',
 						'container'       => false,
 						'fallback_cb' => '' ) ); ?>
+				</nav>
+
+				<?php /**** Mobile Navigation ****/ ?>				
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle">Categorii</button>
+					<?php wp_nav_menu( array(
+						'theme_location' => 'mobile_menu',
+						'container'      => false ) ); ?>
 				</nav>
 				
 				<?php /**** Banner ****/ ?>

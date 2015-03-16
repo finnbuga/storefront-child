@@ -17,6 +17,18 @@ function storefront_child_load_styles_and_scripts() {
 
 
 /**
+ * Add Mobile menu.
+ */
+function storefront_child_register_menus() {
+  register_nav_menus(
+    array(  
+    	'mobile_menu' => __( 'Mobile Menu' )
+    )
+  );
+} 
+
+
+/**
  * Remove breadcrumb.
  */
 function storefront_child_remove_breadcrumb() {
