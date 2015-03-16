@@ -15,6 +15,10 @@
 	.secondary-nav {
 		display: none;
 	}
+
+	.main-navigation {
+		margin: 1em 0;
+	}
 	
 	.logo {
 		margin-bottom: .5em;
@@ -31,11 +35,16 @@
 	    margin-bottom: 3em;
 	    padding-top: 1em;
 
-		// Display all header elements
+		// Display header elements
 		.top-message,
 		.main-nav,
 		.secondary-nav {
 			display: block;
+		}
+		
+		// Hide Mobile navigation
+		.main-navigation {
+			display: none;
 		}
 
 		.top-message {
