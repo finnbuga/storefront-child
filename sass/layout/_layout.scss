@@ -2,6 +2,25 @@
  * General Layout
  */
 
+.site-header {
+	padding-top: 1em;
+	
+	// Hide header elements:
+	.top-message,
+	.main-nav,
+	.secondary-nav {
+		display: none;
+	}
+	
+	.top-menu {
+		float: right;
+	}
+	
+	.logo {
+		margin-bottom: .5em;
+	}
+}
+	    
 @media screen and (min-width: 768px) {
 	// Reset parent theme styling
 	.col-full {
@@ -11,6 +30,13 @@
 	.site-header {
 	    margin-bottom: 3em;
 	    padding-top: 1em;
+
+		// Display all header elements
+		.top-message,
+		.main-nav,
+		.secondary-nav {
+			display: block;
+		}
 
 		.top-message {
 			@include span(5 of 12);
@@ -26,7 +52,7 @@
 	        margin-bottom: 35px;
         }
 
-		.primary-nav {
+		.main-nav {
 			margin-bottom: 1.5em;
 		}
 		
