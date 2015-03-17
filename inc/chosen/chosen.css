@@ -1,7 +1,6 @@
 /**
  * Stylesheet for integrating Chosen jQuery lib into Storefront Child theme.
  */
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 .chosen-container .chosen-single {
   border: solid 1px #ccc;
   padding: 10px 15px;
