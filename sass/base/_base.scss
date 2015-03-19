@@ -33,6 +33,16 @@
 }
 
 /**
+ * Main content area
+ */
+// Reset parent theme styling
+.page-template-template-homepage {
+	.site-main {
+		padding-top: 0;
+	}
+}
+
+/**
  * Footer
  */
 .site-footer {

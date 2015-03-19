@@ -2,6 +2,17 @@
  * WooCommerce
  */
 /**
+ * Homepage
+ */
+.page-template-template-homepage .storefront-product-section {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.page-template-template-homepage .storefront-product-section .section-title {
+  display: none;
+}
+
+/**
  * Products
  */
 .woocommerce.archive .woocommerce-ordering,

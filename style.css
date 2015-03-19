@@ -171,6 +171,13 @@ a:hover {
 }
 
 /**
+ * Main content area
+ */
+.page-template-template-homepage .site-main {
+  padding-top: 0;
+}
+
+/**
  * Footer
  */
 .site-footer {

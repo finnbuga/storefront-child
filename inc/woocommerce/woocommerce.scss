@@ -8,6 +8,22 @@
 @import '../../sass/utils/mixins';
 
 /**
+ * Homepage
+ */
+.page-template-template-homepage {
+
+	.storefront-product-section {
+		// Reset parent theme styling
+		border-bottom: 0;
+		margin-bottom: 0;
+
+		.section-title {
+			display: none;
+		}
+	}
+}
+
+/**
  * Products
  */
 .woocommerce.archive {
