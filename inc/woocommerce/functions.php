@@ -66,7 +66,7 @@ function storefront_child_display_custom_taxonomies() {
 				?>
 				<li>
 					<label><?php echo ucfirst( $taxonomy ); ?>: </label>
-					<span><?php echo strip_tags( $term_list ); ?></span>
+					<span><?php echo $taxonomy == 'colectii' ? $term_list : strip_tags( $term_list ); ?></span>
 				</li>
 				<?php
 			}
