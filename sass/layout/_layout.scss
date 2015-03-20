@@ -9,8 +9,11 @@
 		float: right;
 	}
 	
-	// Hide header elements
-	.top-message,
+	.top-message {
+		display: none;
+	}
+	
+	// Hide desktop menus
 	.main-nav,
 	.secondary-nav {
 		display: none;
@@ -49,14 +52,18 @@
 	    margin-bottom: 3em;
 	    padding-top: 1em;
 
-		// Display header elements
-		.top-message,
+		// Unhide
+		.top-message {
+			display: block;
+		}
+		
+		// Unhide desktop menus
 		.main-nav,
 		.secondary-nav {
 			display: block;
 		}
 		
-		// Hide Mobile navigation
+		// Hide mobile menu
 		.main-navigation {
 			display: none;
 		}
