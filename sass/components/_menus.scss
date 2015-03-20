@@ -129,26 +129,63 @@ ul.menu {
 	.main-nav {
 		ul.menu {
     		text-align: center;
-    		
-			li {
-                margin-right: 50px;
+
+			a {
+				@include menu-links;
+			}
+			
+			> li {
+                margin: 0 25px;
+                &:first-child {
+                    margin-left: 0;
+                }
                 &:last-child {
                     margin-right: 0;
                 }
                 
                 // Fancy border top effect.
-				a {
-    				@include menu-links;
+				> a {
                     display: block;
                     margin-top: -1px;
                     border-top: solid 2px transparent;
                     padding: 25px 0 0;
                     transition: all 0.35s ease-in-out;
+                    
+                    // Reset parent theme styling
+                    color: $text-color;
                 }
-                a:hover,
+                > a:hover,
                 &.current-menu-item > a {
                     border-top: solid 2px $text-color;                        
                 }
+                
+				// Position the sub-menu absolutely             
+				position: relative;
+				.sub-menu {
+					position: absolute;
+					
+					// Align it under the parent link
+					margin: 0 0 0 -35px;
+					padding: .5em 30px;
+					
+					// Display it in a whitish box
+					z-index: 10;
+					background: white; // Fall-back for browsers that don't support rgba
+					background: rgba(255, 255, 255, .98);
+					border: 2px solid #eee;
+					
+					list-style: none;
+					li {
+						margin: 1.5em 0;
+					}
+					
+					// Only display it on hover
+					display: none;
+				}
+				
+				&:hover .sub-menu {
+					display: block;
+				}     
             }
         }
     }
