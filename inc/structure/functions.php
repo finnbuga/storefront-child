@@ -29,14 +29,6 @@ function storefront_child_register_menus() {
 
 
 /**
- * Remove breadcrumb.
- */
-function storefront_child_remove_breadcrumb() {
-	remove_action( 'storefront_content_top', 'woocommerce_breadcrumb' );
-}
-
-
-/**
  * Script for Facebook.
  */
 function storefront_child_facebook_script() {
