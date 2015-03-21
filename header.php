@@ -76,7 +76,7 @@
 				</nav>
 				
 				<?php /**** Banner ****/ ?>
-				<?php if (is_front_page()) : ?>
+				<?php if ( is_front_page() && !wp_is_mobile() ) : ?>
 					<div class="banner">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/banner.png" width="1140" height="500" alt="tanara domnisoara cu pantofi, poseta si pisic conduce o masina">
 					</div>
