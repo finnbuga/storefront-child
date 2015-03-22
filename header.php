@@ -30,7 +30,7 @@
 	
 			<?php /**** Top Message ****/ ?>		
 			<div class="top-message">
-				Livrare prin curier cu plata ramburs
+				Plata ramburs, retur gratuit
 			</div>
 	
 			<?php /**** Top Menu ****/ ?>
