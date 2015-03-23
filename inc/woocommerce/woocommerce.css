@@ -247,6 +247,10 @@ table.cart .product-quantity,
 table.cart .product-subtotal {
   text-align: right;
 }
+table.cart .actions {
+  padding-left: 0;
+  padding-right: 0;
+}
 table.cart .variation dt,
 table.cart .variation dd {
   display: inline-block;
