@@ -17,6 +17,12 @@
  */
 .woocommerce-breadcrumb {
   display: none;
+  margin: 0;
+  border: none;
+  padding: none;
+}
+.single-product .woocommerce-breadcrumb {
+  display: block;
 }
 
 /**
@@ -344,11 +350,8 @@ a.remove {
   /**
    * Breadcrumb
    */
-  .single-product .woocommerce-breadcrumb {
-    display: block;
+  .woocommerce-breadcrumb {
     margin: -2em 0 1em 0;
-    border: none;
-    padding: none;
   }
 
   /**

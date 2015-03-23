@@ -27,9 +27,20 @@
  * Breadcrumb
  */
 .woocommerce-breadcrumb {
+
+	// Only display it on product page
 	display: none;
+	.single-product & {
+		display: block;
+	}
+	
+	// Reset parent theme styling
+	margin: 0;
+	border: none;
+	padding: none;
 }
 
+	
 /**
  * Products
  */
@@ -382,16 +393,9 @@ a.remove {
 	 * Breadcrumb
 	 */
 	.woocommerce-breadcrumb {
-		.single-product & {
-			display: block;
-			margin: -2em 0 1em 0;
-			
-			// Reset parent theme styling
-			border: none;
-			padding: none;
-		}
+		margin: -2em 0 1em 0;
 	}
-
+		
 	/**
 	 * Products
 	 */
