@@ -15,30 +15,34 @@ ul.menu {
 /**
  * Top Menu
  */
-.top-menu {
+ul.top-menu {
 	text-align: right;
 	
-		
 	@media screen and (max-width: 768px) {
-		li a {
+		> li {
 			// Hide all links
 			display: none;
 			
 			// Display only the cart
-			&.cart {
-				display: inline;
+			&:last-child {
+				display: block;
 				
-				// Replace the text with an icon
-				@include icon-replacement("\f07a", $color2, 35px);
-				
-				// Place the number of items above the icon
-				position: relative;
-				.no_items {
-					position: absolute;
-					top: -33px;
-					right: 5px;
+				a {
+					// Replace the text with an icon
+					@include icon-replacement("\f07a", $color2, 35px);
+					&:before {
+						margin: 0;
+					}
 					
-					@include disk-background(17px, $color1, white, 12px);
+					// Place the number of items above the icon
+					position: relative;
+					.no_items {
+						position: absolute;
+						top: -33px;
+						right: 0;
+						
+						@include disk-background(17px, $color1, white, 12px);
+					}
 				}
 			}
 		}
@@ -89,8 +93,8 @@ ul.menu {
 	/**
 	 * Top Menu
 	 */
-    .top-menu {
-		li {
+    ul.top-menu {
+		> li {
 			// Add vertical lines as separators
             margin-right: 10px;
             border-right: 1px solid #aaa;

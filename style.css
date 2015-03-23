@@ -30,6 +30,7 @@ Text Domain: storefront-child
   margin: 1em 0;
 }
 .site-header .logo {
+  width: 83%;
   margin-bottom: .5em;
 }
 
@@ -226,31 +227,36 @@ ul.menu > li {
 /**
  * Top Menu
  */
-.top-menu {
+ul.top-menu {
   text-align: right;
 }
 @media screen and (max-width: 768px) {
-  .top-menu li a {
+  ul.top-menu > li {
     display: none;
   }
-  .top-menu li a.cart {
-    display: inline;
+  ul.top-menu > li:last-child {
+    display: block;
+  }
+  ul.top-menu > li:last-child a {
     font-size: 0;
     position: relative;
   }
-  .top-menu li a.cart::before {
+  ul.top-menu > li:last-child a::before {
     font-family: FontAwesome;
     content: "";
     margin-right: .5em;
     color: #E0575E;
   }
-  .top-menu li a.cart::before {
+  ul.top-menu > li:last-child a::before {
     font-size: 35px;
   }
-  .top-menu li a.cart .no_items {
+  ul.top-menu > li:last-child a:before {
+    margin: 0;
+  }
+  ul.top-menu > li:last-child a .no_items {
     position: absolute;
     top: -33px;
-    right: 5px;
+    right: 0;
     display: block;
     width: 17px;
     height: 17px;
@@ -304,37 +310,37 @@ ul.menu > li {
   /**
    * Top Menu
    */
-  .top-menu li {
+  ul.top-menu > li {
     margin-right: 10px;
     border-right: 1px solid #aaa;
     padding-right: 10px;
     line-height: .6em;
   }
-  .top-menu li:last-child {
+  ul.top-menu > li:last-child {
     margin-right: 0;
     border-right: none;
     padding-right: 0;
   }
-  .top-menu li a {
+  ul.top-menu > li a {
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #444444;
   }
-  .top-menu li a.cart {
+  ul.top-menu > li a.cart {
     color: #E0575E;
   }
-  .top-menu li a.cart::before {
+  ul.top-menu > li a.cart::before {
     font-family: FontAwesome;
     content: "";
     margin-right: .5em;
     color: inherit;
   }
-  .top-menu li a.cart .no_items::before {
+  ul.top-menu > li a.cart .no_items::before {
     content: "(";
   }
-  .top-menu li a.cart .no_items::after {
+  ul.top-menu > li a.cart .no_items::after {
     content: ")";
   }
 
