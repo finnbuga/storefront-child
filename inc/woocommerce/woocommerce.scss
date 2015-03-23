@@ -268,12 +268,6 @@ table.cart {
 			//border-top: 1px solid #ccc;
 		}
 	}	
-	.product-thumbnail {
-		display: table-cell;
-		img {
-			margin: 0;
-		}
-	}
 	.product-price,
 	.product-quantity,
 	.product-subtotal {
@@ -463,6 +457,20 @@ a.remove {
 		}
 	}
 
+	/**
+	 * Cart
+	 */
+	table.cart {
+		.product-thumbnail {
+			display: table-cell;
+	
+			img {
+				margin: 0;
+			}
+	
+		}
+	}
+	
 	/**
 	 * Checkout
 	 */

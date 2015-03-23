@@ -247,12 +247,6 @@ table.cart td {
   padding: 25px 5px;
   border-bottom: 1px solid #ccc;
 }
-table.cart .product-thumbnail {
-  display: table-cell;
-}
-table.cart .product-thumbnail img {
-  margin: 0;
-}
 table.cart .product-price,
 table.cart .product-quantity,
 table.cart .product-subtotal {
@@ -431,6 +425,16 @@ a.remove {
   }
   .woocommerce.single-product div.product .related.products h2 {
     text-align: left;
+  }
+
+  /**
+   * Cart
+   */
+  table.cart .product-thumbnail {
+    display: table-cell;
+  }
+  table.cart .product-thumbnail img {
+    margin: 0;
   }
 
   /**
