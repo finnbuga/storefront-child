@@ -304,7 +304,17 @@ table.cart {
 }
 
 a.remove {
-	font-size: 21px;
+	@include icon-replacement("\f057", $color2, 21px);
+	line-height: 0;
+	
+	// Reset parent theme styling
+	width: auto;
+	height: auto;
+	text-indent: 0;
+	&:before {
+		position: static;
+		line-height: 1;
+	}
 }
 
 /**

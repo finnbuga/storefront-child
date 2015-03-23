@@ -249,8 +249,6 @@ ul.top-menu {
   }
   ul.top-menu > li:last-child a::before {
     font-size: 35px;
-  }
-  ul.top-menu > li:last-child a:before {
     margin: 0;
   }
   ul.top-menu > li:last-child a .no_items {
