@@ -30,9 +30,6 @@ ul.top-menu {
 				a {
 					// Replace the text with an icon
 					@include icon-replacement("\f07a", $color2, 35px);
-					&:before {
-						margin: 0;
-					}
 					
 					// Place the number of items above the icon
 					position: relative;
