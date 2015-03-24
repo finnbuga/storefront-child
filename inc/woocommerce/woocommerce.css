@@ -27,6 +27,13 @@
 }
 
 /**
+ * Notifications
+ */
+.woocommerce-message .button {
+  height: auto;
+}
+
+/**
  * Products
  */
 .woocommerce.archive .woocommerce-ordering,
