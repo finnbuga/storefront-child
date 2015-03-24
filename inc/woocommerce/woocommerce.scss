@@ -255,28 +255,41 @@ table.cart {
 	}
 	td {
 		vertical-align: middle;
-		padding: 25px 5px;
 		border-bottom: 1px solid #ccc;
-		&::first-child {
-			//border-top: 1px solid #ccc;
+
+		padding: 25px 5px;
+		&.actions {
+			padding: 25px 0;
 		}
 	}	
+
 	.product-price,
 	.product-quantity,
 	.product-subtotal {
 		text-align: right;
 	}
-	.actions {
-		padding-left: 0;
-		padding-right: 0;
+	
+	// Hide unit price
+	.product-price {
+		display: none;
 	}
 	
+	// Shorten the display of the product size (variation)
 	.variation {
-		dt,
+		display: inline;
+		dt {
+			display: none;
+		}
 		dd {
 			display: inline-block;
 		}
 	}
+	
+	// Don't display backorder notification (it is not kept u to date by shop admin)
+	.backorder_notification {
+		display: none;
+	}
+
 	.qty {
 		max-width: 3.6em;
 	}
@@ -477,6 +490,10 @@ a.remove {
 				margin: 0;
 			}
 	
+		}
+		
+		.product-price {
+			display: table-cell;
 		}
 	}
 	

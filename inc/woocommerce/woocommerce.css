@@ -239,21 +239,31 @@ table.cart thead th {
 }
 table.cart td {
   vertical-align: middle;
-  padding: 25px 5px;
   border-bottom: 1px solid #ccc;
+  padding: 25px 5px;
+}
+table.cart td.actions {
+  padding: 25px 0;
 }
 table.cart .product-price,
 table.cart .product-quantity,
 table.cart .product-subtotal {
   text-align: right;
 }
-table.cart .actions {
-  padding-left: 0;
-  padding-right: 0;
+table.cart .product-price {
+  display: none;
 }
-table.cart .variation dt,
+table.cart .variation {
+  display: inline;
+}
+table.cart .variation dt {
+  display: none;
+}
 table.cart .variation dd {
   display: inline-block;
+}
+table.cart .backorder_notification {
+  display: none;
 }
 table.cart .qty {
   max-width: 3.6em;
@@ -453,6 +463,9 @@ a.remove:before {
   }
   table.cart .product-thumbnail img {
     margin: 0;
+  }
+  table.cart .product-price {
+    display: table-cell;
   }
 
   /**
