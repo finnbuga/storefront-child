@@ -255,7 +255,7 @@ table.cart td.actions {
 table.cart .product-price,
 table.cart .product-quantity,
 table.cart .product-subtotal {
-  text-align: right;
+  text-align: center;
 }
 table.cart .product-price {
   display: none;
@@ -274,6 +274,16 @@ table.cart .backorder_notification {
 }
 table.cart .qty {
   max-width: 3.6em;
+}
+table.cart .quantity input[name="update_cart"] {
+  padding: 7px;
+  line-height: 1em;
+  height: auto;
+  margin: 0 1em;
+}
+table.cart td.actions input[name="apply_coupon"],
+table.cart td.actions input[name="update_cart"] {
+  display: none;
 }
 
 .wc-proceed-to-checkout .button {

@@ -4,9 +4,9 @@
  */
 
 /**
- * Stylesheets
+ * Stylesheets & Scripts
  */
-add_action( 'wp_enqueue_scripts', 'storefront_child_woocommerce_load_styles', 30 );
+add_action( 'wp_enqueue_scripts', 'storefront_child_woocommerce_load_styles_and_scripts', 30 );
 
 /**
  * Sidebar

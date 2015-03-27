@@ -275,7 +275,7 @@ table.cart {
 	.product-price,
 	.product-quantity,
 	.product-subtotal {
-		text-align: right;
+		text-align: center;
 	}
 	
 	// Hide unit price
@@ -301,6 +301,23 @@ table.cart {
 
 	.qty {
 		max-width: 3.6em;
+	}
+	
+	.quantity {
+		input[name="update_cart"] {		
+			padding: 7px;
+			line-height: 1em;
+			height: auto;
+			margin: 0 1em;
+		}
+	}
+	
+	td.actions {
+		input[name="apply_coupon"],
+		input[name="update_cart"] {
+			display: none;
+		}
+
 	}
 }
 

@@ -4,10 +4,11 @@
  */
 
 /**
- * Load stylesheet.
+ * Load stylesheets and scripts.
  */
-function storefront_child_woocommerce_load_styles() {
+function storefront_child_woocommerce_load_styles_and_scripts() {
 	wp_enqueue_style(  'storefront-child-woocommerce', get_stylesheet_directory_uri() . '/inc/woocommerce/woocommerce.css' );
+	wp_enqueue_script( 'storefront-child-woocommerce', get_stylesheet_directory_uri() . '/inc/woocommerce/woocommerce.js', array( 'jquery' ), '20150327', true );
 }
 
 
