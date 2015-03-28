@@ -20,5 +20,33 @@ jQuery(document).ready(function($) {
 	$( ".cart input[name='coupon_code']" ).keypress(function() {
 		$( ".cart input[name='apply_coupon']" ).show();
 	});
+
+	/*
+	 * Convert select options into links
+	 * for product variations.
+	 */	
+	/*$('form.variations_form select').each(function(i, select){
+	    var select = $( "#pa_masuri" );
+	    select.find( 'option' ).each(function(j, option){
+	        var option = $( option );
+	        
+	        if ( option.val() == '' ) {
+		        return;
+	        }
+	        
+	        // Create a link
+			link = $('<a>',{
+			    text: option.val(),
+			    href: '#',
+			    class: option.attr('selected') ? 'selected' : '',
+			    click: function(){
+					$( "option[value=" + option.val() + "]" ).prop( "selected", true );
+					return false;
+				}
+			});
+			
+	        select.before( link );
+	    });
+	});/*
 });
 
