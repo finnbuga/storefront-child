@@ -84,7 +84,7 @@ function storefront_child_display_custom_taxonomies() {
 function storefront_child_product_info_notes() {
 	?>
 	<div class="info-notes">
-		<div class="delivery">Livrare prin curier 18 lei</div>
+		<div class="delivery">Livrare prin curier 13 lei</div>
 		<div class="payment">Plata Ramburs</div>
 		<div class="return">Retur gratuit</div>
 	</div>
