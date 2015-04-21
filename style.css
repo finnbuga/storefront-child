@@ -144,6 +144,9 @@ a {
 a:hover {
   color: #5FC5B8;
 }
+a:focus {
+  outline: none;
+}
 
 /**
  * Global styles
