@@ -670,6 +670,14 @@ input[type="submit"].alt:hover,
   background-color: #E0575E;
   opacity: inherit;
 }
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+.button:focus,
+.added_to_cart:focus {
+  outline: none;
+}
 
 input[type="text"],
 input[type="email"],

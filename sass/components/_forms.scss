@@ -28,6 +28,11 @@ input[type="submit"],
 			opacity: inherit;
 		}
 	}
+	
+	// Reset parent theme styling
+	&:focus {
+		outline: none;
+	}
 }
 
 input[type="text"],
