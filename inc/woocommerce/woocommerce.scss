@@ -54,9 +54,28 @@
  * Products
  */
 .woocommerce.archive {
-	.woocommerce-ordering,
-	.woocommerce-result-count {
-		display: none;
+	.storefront-sorting {
+		// Form controls are displayed twice: on top and at the bottom.
+		// Hide the ones on top
+		&:first-of-type {
+			display: none;
+		}
+		
+		// Hide Order by and the results count
+		.woocommerce-ordering,
+		.woocommerce-result-count {
+			display: none;
+		}
+		
+		.woocommerce-pagination {
+			// Reset parent theme styling
+			float: none;
+			border: none;
+			
+			.page-numbers li .page-numbers.current {
+				background-color: $color1;
+			}
+		}
 	}
 }
 ul.products {
@@ -315,13 +334,12 @@ table.cart {
 		}
 	}
 	
+	// Make the Coupon Code input box more visible
 	#coupon_code {
 		&::-webkit-input-placeholder { /* WebKit browsers */
-
 			color:    $color1;
 		}
 		&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-
 			color:    $color1;
 			opacity:  1;
 		}
@@ -333,6 +351,7 @@ table.cart {
 			color:    $color1;
 		}
 	}
+	
 	td.actions {
 		input[name="apply_coupon"],
 		input[name="update_cart"] {

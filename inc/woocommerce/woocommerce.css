@@ -36,9 +36,19 @@
 /**
  * Products
  */
-.woocommerce.archive .woocommerce-ordering,
-.woocommerce.archive .woocommerce-result-count {
+.woocommerce.archive .storefront-sorting:first-of-type {
   display: none;
+}
+.woocommerce.archive .storefront-sorting .woocommerce-ordering,
+.woocommerce.archive .storefront-sorting .woocommerce-result-count {
+  display: none;
+}
+.woocommerce.archive .storefront-sorting .woocommerce-pagination {
+  float: none;
+  border: none;
+}
+.woocommerce.archive .storefront-sorting .woocommerce-pagination .page-numbers li .page-numbers.current {
+  background-color: #5FC5B8;
 }
 
 ul.products li.product figure {
