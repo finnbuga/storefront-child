@@ -462,7 +462,7 @@ ul.top-menu {
 .widget-area .widget {
   font-size: inherit;
 }
-.widget-area .widget h1.widget-title {
+.widget-area .widget .widget-title {
   display: inline-block;
   margin: 0;
   margin-bottom: -2px;
