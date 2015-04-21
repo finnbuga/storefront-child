@@ -282,6 +282,24 @@ table.cart .quantity input[name="update_cart"] {
   height: auto;
   margin: 0 1em;
 }
+table.cart #coupon_code::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #5FC5B8;
+}
+table.cart #coupon_code:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #5FC5B8;
+  opacity: 1;
+}
+table.cart #coupon_code::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #5FC5B8;
+  opacity: 1;
+}
+table.cart #coupon_code:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #5FC5B8;
+}
 table.cart td.actions input[name="apply_coupon"],
 table.cart td.actions input[name="update_cart"] {
   display: none;

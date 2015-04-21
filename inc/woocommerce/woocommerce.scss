@@ -315,6 +315,24 @@ table.cart {
 		}
 	}
 	
+	#coupon_code {
+		&::-webkit-input-placeholder { /* WebKit browsers */
+
+			color:    $color1;
+		}
+		&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+
+			color:    $color1;
+			opacity:  1;
+		}
+		&::-moz-placeholder { /* Mozilla Firefox 19+ */
+			color:    $color1;
+			opacity:  1;
+		}
+		&:-ms-input-placeholder { /* Internet Explorer 10+ */
+			color:    $color1;
+		}
+	}
 	td.actions {
 		input[name="apply_coupon"],
 		input[name="update_cart"] {
