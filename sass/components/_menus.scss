@@ -65,6 +65,10 @@ ul.top-menu {
 	}
 	
 	ul.menu {
+		&[aria-expanded=true] {
+			display: block;
+		}
+		
 		background-color: white;
 		
 		li {

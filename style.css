@@ -286,6 +286,9 @@ ul.top-menu {
 .main-navigation ul.menu {
   background-color: white;
 }
+.main-navigation ul.menu[aria-expanded=true] {
+  display: block;
+}
 .main-navigation ul.menu li {
   display: list-item;
   border-bottom: double 3px #eeeeee;
