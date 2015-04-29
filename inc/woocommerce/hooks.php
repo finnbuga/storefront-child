@@ -47,5 +47,4 @@ add_action(    'woocommerce_after_single_product_summary',  'storefront_child_pr
  * Cart & Checkout
  */
 add_filter( 'woocommerce_default_address_fields', 'storefront_child_woocommerce_make_postcode_optional' );
-add_filter( 'woocommerce_terms_is_checked_default', 'storefront_child_woocommerce_check_terms_by_default' );
 add_filter( 'woocommerce_cart_shipping_method_full_label', 'storefront_child_woocommerce_shorten_shipping_line', 10, 2 );

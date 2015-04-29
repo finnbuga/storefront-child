@@ -130,14 +130,6 @@ function storefront_child_woocommerce_make_postcode_optional( $address_fields ) 
 
 
 /**
- * Check the Terms & Conditions checkbox by default on the checkout form.
- */
-function storefront_child_woocommerce_check_terms_by_default() {
-	return true;
-}
-
-
-/**
  * Shorten the shipping line to contain only the cost.
  * Remove the name of the shipping. E.g. "Fast delivery".
  */
