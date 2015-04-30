@@ -581,6 +581,15 @@ ul.top-menu {
   max-width: 100%;
 }
 
+.widget_trusted_widget .trusted {
+  display: block;
+  border-top: solid 2px #e9e9e9;
+  padding-top: 25px;
+}
+.widget_trusted_widget .trusted img {
+  height: 203px;
+}
+
 .legal {
   margin-top: 1.618em;
   text-align: center;

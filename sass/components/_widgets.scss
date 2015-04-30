@@ -114,6 +114,16 @@
 	max-width: 100%;
 }
 
+.widget_trusted_widget {
+	.trusted {
+		display: block;
+		@include widget-body;
+		img {
+			height: 203px;
+		}
+	}
+}
+
 .legal {
     margin-top: 1.618em;
     text-align: center;
