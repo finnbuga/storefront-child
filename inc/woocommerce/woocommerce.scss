@@ -408,7 +408,8 @@ a.remove {
 	.woocommerce-billing-fields {
 		#billing_country_field,
 		#billing_company_field,
-		#billing_state_field {
+		#billing_state_field,
+		.create-account {
 			display: none;
 		}
 		#billing_address_2_field,

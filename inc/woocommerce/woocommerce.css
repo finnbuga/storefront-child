@@ -366,7 +366,8 @@ a.remove:before {
  */
 .checkout .woocommerce-billing-fields #billing_country_field,
 .checkout .woocommerce-billing-fields #billing_company_field,
-.checkout .woocommerce-billing-fields #billing_state_field {
+.checkout .woocommerce-billing-fields #billing_state_field,
+.checkout .woocommerce-billing-fields .create-account {
   display: none;
 }
 .checkout .woocommerce-billing-fields #billing_address_2_field,
