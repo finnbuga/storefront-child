@@ -113,8 +113,9 @@ function storefront_child_product_availability() {
 function storefront_child_product_contact() {
 	?>
 	<p class="contact">
-	Ai intrebari? Suna-ne! - 0726 401 154<br />
-	Luni - Duminica 09:00 - 21:00
+	<?php //Ai intrebari? Suna-ne! - 0744657695<br /> ?>
+	Ai intrebari? Scrie-ne la contact@lamusechic.ro
+	<?php //Luni - Duminica 09:00 - 21:00 ?>
 	</p>
 	<?php
 }
