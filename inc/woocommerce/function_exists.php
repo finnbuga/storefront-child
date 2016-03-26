@@ -19,3 +19,9 @@ function woocommerce_output_related_products() {
 		'columns'        => 4
 	) );
 }
+
+/**
+ * (Don't) output the Coupon form for the checkout.
+ */
+function woocommerce_checkout_coupon_form() {
+}
