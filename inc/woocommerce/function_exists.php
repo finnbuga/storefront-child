@@ -25,3 +25,9 @@ function woocommerce_output_related_products() {
  */
 function woocommerce_checkout_coupon_form() {
 }
+
+/**
+ * (Don't) output the WooCommerce Checkout Login Form
+ */
+function woocommerce_checkout_login_form() {
+}
