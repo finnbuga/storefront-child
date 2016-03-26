@@ -48,8 +48,8 @@ function storefront_child_woocommerce_change_products_per_page() {
 function storefront_child_display_custom_taxonomies() {
 	global $post;
 	
-	$custom_taxonomies = array( 'colectii' , 'stil', 'dimensiuni', 'materiale', 'sistem de inchidere', 
-			'accesorii', 'culori', 'origine', 'metoda de fabricatie', 'instructiuni de intretinere' );
+	$custom_taxonomies = array( 'colectii' , 'stil', 'origine', 'dimensiuni', 'materiale', 'sistem de inchidere', 
+			'accesorii', 'culori', 'instructiuni de intretinere' );
 	
 	if ( $term_list = get_the_term_list( $post->ID, 'atentionari', '', ', ', '' ) ) {
 		?>
@@ -65,7 +65,7 @@ function storefront_child_display_custom_taxonomies() {
 		foreach ($custom_taxonomies as $taxonomy) {
 			if ( $term_list = get_the_term_list( $post->ID, $taxonomy, '', ', ', '' ) ) {
 				?>
-				<li>
+				<li class="<?php echo $taxonomy; ?>">
 					<label><?php echo ucfirst( $taxonomy ); ?>: </label>
 					<span><?php echo $taxonomy == 'colectii' ? $term_list : strip_tags( $term_list ); ?></span>
 				</li>
